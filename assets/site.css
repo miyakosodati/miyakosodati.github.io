@@ -102,3 +102,6 @@ pre{background:#10151d;border:1px solid var(--line);border-radius:10px;
 /* footer */
 footer.site{border-top:1px solid var(--line);padding:36px 0;color:var(--tx3);font-size:13px;margin-top:60px}
 .fl{display:flex;gap:24px;flex-wrap:wrap;margin-bottom:14px}
+
+/* 実アイコン(img)用: グラデ背景を消して画像をそのまま表示 */
+img.icon{background:none;padding:0;object-fit:contain}
