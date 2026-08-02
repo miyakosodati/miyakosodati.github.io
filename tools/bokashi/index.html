@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MYS Bokashi — 高さ基準のグラデーションをUVに焼いて画像出力 | MYS Tools</title>
+<meta name="description" content="Maya上で高さ基準のグラデーション(ぼかし)をUV空間に焼いて画像出力する無償ツール。外部ライブラリ不要、Maya 2020–2026対応、商用利用可。">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="logo" href="/"><span>MYS</span> Tools</a>
+    <a class="item" href="/#tools">ツール</a>
+    <a class="item" href="/eula/">EULA</a>
+    <a class="item" href="/contact/">お問い合わせ</a>
+  </div>
+</header>
+
+<div class="wrap tool-body">
+
+  <div class="tool-head">
+    <div class="crumb"><a href="/">MYS Tools</a> / Bokashi</div>
+    <h1>MYS Bokashi <span style="font-size:16px;color:var(--tx3)">v1.0.0</span></h1>
+    <div class="tag">高さ基準のグラデーションを UV に焼いて画像出力（ぼかし）</div>
+    <div class="badges">
+      <span class="bd dcc">Maya 2020–2026</span>
+      <span class="bd">Windows</span>
+      <span class="bd">外部依存なし</span>
+      <span class="bd">無償・商用利用可</span>
+    </div>
+    <div class="dl-row">
+      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/bokashi-v1.0.0/MYS_Bokashi_v1.0.0.zip">ダウンロード（v1.0.0）</a>
+      <div class="dl-note">ダウンロード・使用により<a href="/eula/">使用許諾契約（EULA）</a>に同意したものとみなされます。社外への再配布はできません。</div>
+    </div>
+  </div>
+
+  <!-- TODO: 1枚サマリー画像に差し替え -->
+  <div class="shot">サマリー画像（Before/After）— 準備中</div>
+
+  <h2 class="sec">できること</h2>
+  <!-- TODO: 智之さんレビュー — 機能説明はツール実仕様に合わせて加筆・修正してください -->
+  <ul>
+    <li>メッシュの<strong>高さを基準にしたグラデーション</strong>を UV 空間にベイクし、テクスチャ画像として出力します。衣装の裾の汚し、根元からのぼかし、高さベースのマスク作りなどをワンアクションで。</li>
+    <li>出力はそのまま Photoshop や Substance Painter でのテクスチャ作業のベース・マスクとして使えます。</li>
+    <li>プレビューを確認しながらパラメータを調整できます。</li>
+  </ul>
+
+  <!-- TODO: 操作GIFを差し込み -->
+  <div class="shot">操作GIF（設定 → ベイク → 出力画像）— 準備中</div>
+
+  <h2 class="sec">動作環境</h2>
+  <table class="spec">
+    <tr><th>対応ソフト</th><td>Autodesk Maya 2020 〜 2026（Windows）/ PySide2・PySide6 両対応（自動判別）</td></tr>
+    <tr><th>追加インストール</th><td>不要。numpy がある環境では自動で高速モード、無い環境でも標準ライブラリのみの互換モードで動作します（結果は同一）。</td></tr>
+    <tr><th>配布物</th><td>zip 1ファイル（スクリプト2つ+アイコン。scripts フォルダへコピーするだけ）</td></tr>
+  </table>
+
+  <h2 class="sec">入れかた</h2>
+  <p><code>MYS_Bokashi.py</code> と <code>MYS_Bokashi_launch.py</code> を Maya のスクリプトフォルダへコピーします。</p>
+  <pre>C:\Users\&lt;ユーザー名&gt;\Documents\maya\scripts\</pre>
+  <p>シェルフボタンの登録コードやアイコン設定は、同梱の README.txt に手順をまとめてあります。アンインストールはコピーしたファイルを削除するだけです。</p>
+
+  <h2 class="sec">承知しておきたいこと</h2>
+  <ul>
+    <li>Windows の「コントロールされたフォルダー アクセス」が有効な環境では、Documents への画像書き出しがブロックされることがあります。出力先をプロジェクトフォルダ等に変更するか、Maya を許可アプリに追加してください（ツール側でも書き込み不可を検出して案内します）。</li>
+  </ul>
+
+  <h2 class="sec">更新履歴</h2>
+  <table class="spec">
+    <tr><th>v1.0.0（2026-08-01）</th><td>初回公開</td></tr>
+  </table>
+
+  <p style="margin-top:26px">不具合報告・要望は <a href="/contact/">お問い合わせフォーム</a> からお願いします。</p>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fl">
+      <a href="https://x.com/miyakosodati">X（@miyakosodati）</a>
+      <a href="/contact/">お問い合わせ・バグ報告</a>
+      <a href="/eula/">EULA（使用許諾）</a>
+    </div>
+    © 都ソダチ / MYS Tools
+  </div>
+</footer>
+
+</body>
+</html>
