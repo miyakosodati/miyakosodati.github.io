@@ -105,3 +105,5 @@ footer.site{border-top:1px solid var(--line);padding:36px 0;color:var(--tx3);fon
 
 /* 実アイコン(img)用: グラデ背景を消して画像をそのまま表示 */
 img.icon{background:none;padding:0;object-fit:contain}
+/* 解説画像(サマリー/UI機能マップ等)の共通枠 */
+.figure{width:100%;display:block;border:1px solid var(--line);border-radius:10px;margin:14px 0}
