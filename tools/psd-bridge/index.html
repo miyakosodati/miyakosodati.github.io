@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MYS PSD Bridge — Substance Painter ⇄ Photoshop レイヤー変換 | MYS Tools</title>
-<meta name="description" content="Substance 3D Painter のレイヤースタックを構造を保ったままマルチレイヤーPSDへ書き出し、PSDからの取り込みにも対応する無償プラグイン。商用利用可。">
-<meta property="og:title" content="MYS PSD Bridge — Painterのレイヤーを、そのままPhotoshopへ。">
-<meta property="og:description" content="グループ階層・ブレンドモード・不透明度を維持してマルチレイヤーPSDへ。単色レイヤーはべた塗り+マスク(非破壊)、PSD→SP取り込みで往復対応。無償・商用利用可。">
+<meta name="description" content="Substance 3D Painter のレイヤースタックを、構造をできる限り保ったままマルチレイヤーPSDへ書き出し、PSDからの取り込みにも対応する無償プラグイン。商用利用可。">
+<meta property="og:title" content="MYS PSD Bridge — Painterのレイヤーを、構造ごとPhotoshopへ。">
+<meta property="og:description" content="グループ階層・ブレンドモード・不透明度をできる限り保ってマルチレイヤーPSDへ。単色レイヤーはべた塗り+マスク(非破壊)、PSD→SP取り込みで往復対応。無償・商用利用可。">
 <meta property="og:url" content="https://miyakosodati.com/tools/psd-bridge/">
 <meta property="og:image" content="https://miyakosodati.com/assets/img/psd-bridge/summary.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -28,7 +28,7 @@
   <div class="tool-head">
     <div class="crumb"><a href="/">MYS Tools</a> / PSD Bridge</div>
     <h1>MYS PSD Bridge</h1>
-    <div class="tag">Substance 3D Painter と Photoshop を、レイヤー構造を保ったまま行き来させるプラグイン</div>
+    <div class="tag">Substance 3D Painter と Photoshop を、レイヤー構造をできる限り保ったまま行き来させるプラグイン</div>
     <div class="badges">
       <span class="bd dcc">Substance 3D Painter 12.x</span>
       <span class="bd">Windows 64bit</span>
@@ -40,11 +40,11 @@
     </div>
   </div>
 
-  <img class="figure" src="/assets/img/psd-bridge/summary.png" alt="MYS PSD Bridge — Painterのレイヤーを、そのままPhotoshopへ。">
+  <img class="figure" src="/assets/img/psd-bridge/summary.png" alt="MYS PSD Bridge — Painterのレイヤーを、構造ごとPhotoshopへ。">
 
   <h2 class="sec">できること</h2>
   <ul>
-    <li><strong>書き出し</strong> — Painter のレイヤースタックを、グループ階層・ブレンドモード・不透明度・表示状態を保ったままマルチレイヤー PSD にします。単色のレイヤーは Photoshop 側で色を変えられる「べた塗りレイヤー + マスク」になり、質感のあるレイヤーはピクセルレイヤーになります。チャンネルごとに PSD 1 枚です。</li>
+    <li><strong>書き出し</strong> — Painter のレイヤースタックを、グループ階層・ブレンドモード・不透明度・表示状態をできる限り保ったままマルチレイヤー PSD にします。両ソフトで対応が異なる機能は近似・変換になります（下の「承知しておきたいこと」参照）。単色のレイヤーは Photoshop 側で色を変えられる「べた塗りレイヤー + マスク」になり、質感のあるレイヤーはピクセルレイヤーになります。チャンネルごとに PSD 1 枚です。</li>
     <li><strong>取り込み</strong> — PSD を Painter のレイヤースタックに戻します。べた塗りレイヤーは画像を経由せず単色フィルとして復元されるため、往復しても劣化しません。取り込みは Ctrl+Z 一回で元に戻せます。</li>
     <li>アンカーポイント参照を Photoshop のクリッピングマスクとして書き出すオプションにも対応しています。</li>
   </ul>
@@ -65,6 +65,7 @@
   <p>Painter を起動し、メニューの <code>Python → Reload Plugins Folder</code> を実行すると、<code>Python</code> メニューに <code>MYS_PSDBridge</code> が現れます。初回起動のみ、同梱ライブラリの展開に十数秒かかります。詳しい使いかたは同梱の README をご覧ください。</p>
 
   <h2 class="sec">承知しておきたいこと（既知の制限）</h2>
+  <p>両ソフトの機能は 1:1 では対応しないため、本ツールは「管理しやすい形をできる限り保って変換する」方針です。対応の無い機能まで完全に補完するものではありません。代表的な制限は以下のとおりです。</p>
   <ul>
     <li><strong>UV の島の外は描けません。</strong> Painter は UV の島に覆われたテクセルしか描画できないため、島の外側は透明のまま書き出されます。</li>
     <li><strong>Photoshop のクリッピングマスクは、取り込み時に Painter 側へそのままは持ち込めません</strong>（Painter API に設定する口が無いため）。取り込み時の扱いはオプションで選べます。</li>
