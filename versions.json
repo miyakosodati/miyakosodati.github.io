@@ -9,5 +9,10 @@
     "version": "1.0.0",
     "page": "https://miyakosodati.com/tools/bokashi/",
     "download": "https://github.com/miyakosodati/miyakosodati.github.io/releases/download/bokashi-v1.0.0/MYS_Bokashi_v1.0.0.zip"
+  },
+  "MYS_PanelShot": {
+    "version": "2.13.5",
+    "page": "https://miyakosodati.com/tools/panelshot/",
+    "download": "https://github.com/miyakosodati/miyakosodati.github.io/releases/download/panelshot-v2.13.5/MYS_PanelShot_v2.13.5.zip"
   }
 }

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MYS PanelShot — 監修・資料用の正投影パネルを一発出力 | MYS Tools</title>
+<meta name="description" content="選択メッシュを複数アングルから一括キャプチャし、正投影統合画像として出力するMaya用無償ツール。2面図/3面図/8面図/9面図・カスタム対応、背景透過可、商用利用可。">
+<meta property="og:title" content="MYS PanelShot — 監修・資料用の正投影パネルを、一発で。">
+<meta property="og:description" content="2面図/3面図/8面図/9面図・カスタムの統合画像を一括出力。角度・撮影距離・アスペクト比・解像度指定、背景透過対応。Maya 2020–2026の無償ツール。">
+<meta property="og:url" content="https://miyakosodati.com/tools/panelshot/">
+<meta property="og:image" content="https://miyakosodati.com/assets/img/panelshot/summary.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="logo" href="/"><span>MYS</span> Tools</a>
+    <a class="item" href="/#tools">ツール</a>
+    <a class="item" href="/eula/">EULA</a>
+    <a class="item" href="/contact/">お問い合わせ</a>
+  </div>
+</header>
+
+<div class="wrap tool-body">
+
+  <div class="tool-head">
+    <div class="crumb"><a href="/">MYS Tools</a> / PanelShot</div>
+    <h1>MYS PanelShot <span style="font-size:16px;color:var(--tx3)">v2.13.5</span></h1>
+    <div class="tag">選択メッシュを複数アングルから一括キャプチャし、正投影統合画像として出力</div>
+    <div class="badges">
+      <span class="bd dcc">Maya 2020–2026</span>
+      <span class="bd">Windows</span>
+      <span class="bd">外部依存なし</span>
+      <span class="bd">無償・商用利用可</span>
+    </div>
+    <div class="dl-row">
+      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/panelshot-v2.13.5/MYS_PanelShot_v2.13.5.zip">ダウンロード（v2.13.5）</a>
+      <div class="dl-note">ダウンロード・使用により<a href="/eula/">使用許諾契約（EULA）</a>に同意したものとみなされます。社外への再配布はできません。</div>
+    </div>
+  </div>
+
+  <img class="figure" src="/assets/img/panelshot/summary.png" alt="MYS PanelShot — 監修・資料用の正投影パネルを、一発で。">
+
+  <h2 class="sec">できること</h2>
+  <ul>
+    <li>選択したメッシュを複数アングルからまとめてキャプチャして、<strong>正投影統合画像</strong>として出力します（<strong>2面図 / 3面図 / 8面図 / 9面図・カスタム</strong>）。</li>
+    <li>カメラ角度（斜め・縦）、撮影距離はもちろん、アスペクト比（Viewport / 1:1 / 4:3 / 3:4 / 16:9 / 9:16）や<strong>解像度も指定可能</strong>です。</li>
+    <li>背景は<strong>透過</strong>とベタ色を選択可能です。</li>
+    <li>社外・社内監修時や、資料・記録・ポートフォリオ用の撮影を一発で！</li>
+  </ul>
+
+  <img class="figure" src="/assets/img/panelshot/uimap.png" alt="MYS PanelShot UI機能マップ — 各セクションの役割">
+  <!-- 操作GIFができたらこの下に追加: <img class="figure" src="/assets/img/panelshot/gif-1.gif" alt=""> -->
+
+  <h2 class="sec">動作環境</h2>
+  <table class="spec">
+    <tr><th>対応ソフト</th><td>Autodesk Maya 2020 〜 2026（Windows）/ PySide2・PySide6 両対応（自動判別）</td></tr>
+    <tr><th>追加インストール</th><td>不要。外部ライブラリに依存しません。</td></tr>
+    <tr><th>配布物</th><td>zip 1ファイル（ドラッグ&ドロップインストーラ同梱）</td></tr>
+  </table>
+
+  <h2 class="sec">入れかた</h2>
+  <p>Maya を起動し、zip を展開したフォルダの <code>install_MYS_PanelShot.py</code> を<strong>ビューポートへドラッグ&amp;ドロップするだけ</strong>です。ファイルのコピーとシェルフボタンの作成まで自動で行われ、再起動なしでそのまま使えます。</p>
+  <p>手動でインストールする場合の手順は、同梱の README.txt にまとめてあります。アンインストールはコピーされたファイルとシェルフボタンを削除するだけです。</p>
+
+  <h2 class="sec">承知しておきたいこと</h2>
+  <ul>
+    <li>キャプチャはビューポートの表示を基にするため、画質や表示内容（シェーディング・アンチエイリアス等）はビューポートの設定に従います。</li>
+  </ul>
+
+  <h2 class="sec">更新履歴</h2>
+  <table class="spec">
+    <tr><th>v2.13.5（2026-08-05）</th><td>一般公開開始</td></tr>
+  </table>
+
+  <p style="margin-top:26px">不具合報告・要望は <a href="/contact/">お問い合わせフォーム</a> からお願いします。</p>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fl">
+      <a href="https://x.com/miyakosodati">X（@miyakosodati）</a>
+      <a href="/contact/">お問い合わせ・バグ報告</a>
+      <a href="/eula/">EULA（使用許諾）</a>
+    </div>
+    © 都ソダチ / MYS Tools
+  </div>
+</footer>
+
+</body>
+</html>
