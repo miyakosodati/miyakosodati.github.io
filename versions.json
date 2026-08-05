@@ -14,5 +14,10 @@
     "version": "2.13.5",
     "page": "https://miyakosodati.com/tools/panelshot/",
     "download": "https://github.com/miyakosodati/miyakosodati.github.io/releases/download/panelshot-v2.13.5/MYS_PanelShot_v2.13.5.zip"
+  },
+  "MYS_WeightIchiba": {
+    "version": "2.0.5",
+    "page": "https://miyakosodati.com/tools/ichiba/",
+    "download": "https://github.com/miyakosodati/miyakosodati.github.io/releases/download/ichiba-v2.0.5/MYS_WeightIchiba_v2.0.5.zip"
   }
 }

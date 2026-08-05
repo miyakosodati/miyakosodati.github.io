@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MYS Weight Ichiba（壱場） — スキンウェイト作業ツール一式 | MYS Tools</title>
+<meta name="description" content="ブラシ塗り・ローラー塗り・テーブル編集・入出力・ミラー差分チェックの5つのウェイトツールを、常駐の壱場ランチャーから起動できるMaya用無償ツールセット。商用利用可。">
+<meta property="og:title" content="MYS Weight Ichiba — ウェイト作業の道具を、ひとつの市場に。">
+<meta property="og:description" content="ブラシ塗り/ローラー塗り/テーブル編集/入出力/ミラー差分チェックの5ツール+壱場ランチャー。Maya 2020–2026対応の無償ツールセット。">
+<meta property="og:url" content="https://miyakosodati.com/tools/ichiba/">
+<meta property="og:image" content="https://miyakosodati.com/assets/img/ichiba/summary.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="logo" href="/"><span>MYS</span> Tools</a>
+    <a class="item" href="/#tools">ツール</a>
+    <a class="item" href="/eula/">EULA</a>
+    <a class="item" href="/contact/">お問い合わせ</a>
+  </div>
+</header>
+
+<div class="wrap tool-body">
+
+  <div class="tool-head">
+    <div class="crumb"><a href="/">MYS Tools</a> / Weight Ichiba</div>
+    <h1>MYS Weight Ichiba（壱場） <span style="font-size:16px;color:var(--tx3)">v2.0.5</span></h1>
+    <div class="tag">スキンウェイト作業ツール一式 — 5つのツールを壱場ランチャーからワンクリックで</div>
+    <div class="badges">
+      <span class="bd dcc">Maya 2020–2026</span>
+      <span class="bd">Windows</span>
+      <span class="bd">外部依存なし</span>
+      <span class="bd">無償・商用利用可</span>
+    </div>
+    <div class="dl-row">
+      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/ichiba-v2.0.5/MYS_WeightIchiba_v2.0.5.zip">ダウンロード（v2.0.5）</a>
+      <div class="dl-note">ダウンロード・使用により<a href="/eula/">使用許諾契約（EULA）</a>に同意したものとみなされます。社外への再配布はできません。</div>
+    </div>
+  </div>
+
+  <img class="figure" src="/assets/img/ichiba/summary.png" alt="MYS Weight Ichiba — ウェイト作業の道具を、ひとつの市場に。">
+
+  <h2 class="sec">収録ツール</h2>
+  <ul>
+    <li><strong>壱場ランチャー</strong> — 全ツールの入口。ビューポートの邪魔をしない小さな常駐バーから、各ツールをワンクリックで起動します。</li>
+    <li><strong>WeightStroke</strong> — ブラシ式ウェイト塗り。ストロークでなじませながら塗れます。</li>
+    <li><strong>WeightRoller</strong> — ローラー式ウェイト塗り。転がすように面で塗り広げます。</li>
+    <li><strong>WeightCanvas</strong> — ウェイトのテーブル表示 / 編集。数値で正確に確認・調整できます。</li>
+    <li><strong>WeightContainer</strong> — ウェイトのエクスポート / インポート。保存・流用・受け渡しに。</li>
+    <li><strong>WeightMirrorChecker</strong> — 左右ミラーの差分チェック。対称崩れを素早く発見します。</li>
+  </ul>
+
+  <img class="figure" src="/assets/img/ichiba/toolmap.png" alt="MYS Weight Ichiba 収録ツール一覧">
+
+  <h2 class="sec">壱場ランチャーの動き</h2>
+  <img class="figure" src="/assets/img/ichiba/gif-1.gif" alt="壱場ランチャーから各ウェイトツールを起動する様子">
+
+  <h2 class="sec">動作環境</h2>
+  <table class="spec">
+    <tr><th>対応ソフト</th><td>Autodesk Maya 2020 〜 2026（Windows）/ PySide2・PySide6 両対応（自動判別）</td></tr>
+    <tr><th>追加インストール</th><td>不要。外部ライブラリに依存しません。</td></tr>
+    <tr><th>配布物</th><td>zip 1ファイル（ドラッグ&ドロップインストーラ同梱・ツール一式入り）</td></tr>
+  </table>
+
+  <h2 class="sec">入れかた</h2>
+  <p>Maya を起動し、zip を展開したフォルダの <code>install_MYS_WeightIchiba.py</code> を<strong>ビューポートへドラッグ&amp;ドロップするだけ</strong>です。ツール一式のコピーと「壱場」シェルフボタンの作成まで自動で行われ、再起動なしでそのまま使えます。</p>
+  <p>手動インストールの手順や、各ツールを直接起動するシェルフボタンの作り方は、同梱の README.txt にまとめてあります。アンインストールはコピーされたフォルダ・ファイルとシェルフボタンを削除するだけです。</p>
+
+  <h2 class="sec">承知しておきたいこと</h2>
+  <ul>
+    <li>上書きインストールでは、旧バージョンのファイルがフォルダ内に残ることがあります。クリーンに入れ直したいときは、先にスクリプトフォルダの <code>MYS_WeightIchiba</code> フォルダを削除してください。</li>
+  </ul>
+
+  <h2 class="sec">更新履歴</h2>
+  <table class="spec">
+    <tr><th>v2.0.5（2026-08-05）</th><td>一般公開開始</td></tr>
+  </table>
+
+  <p style="margin-top:26px">不具合報告・要望は <a href="/contact/">お問い合わせフォーム</a> からお願いします。</p>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fl">
+      <a href="https://x.com/miyakosodati">X（@miyakosodati）</a>
+      <a href="/contact/">お問い合わせ・バグ報告</a>
+      <a href="/eula/">EULA（使用許諾）</a>
+    </div>
+    © 都ソダチ / MYS Tools
+  </div>
+</footer>
+
+</body>
+</html>
