@@ -6,9 +6,9 @@
     "download": "https://github.com/miyakosodati/miyakosodati.github.io/releases/download/psdbridge-2026-07-31/MYS_PSDBridge_2026-07-31.zip"
   },
   "MYS_Bokashi": {
-    "version": "1.0.0",
+    "version": "1.1.5",
     "page": "https://miyakosodati.com/tools/bokashi/",
-    "download": "https://github.com/miyakosodati/miyakosodati.github.io/releases/download/bokashi-v1.0.0/MYS_Bokashi_v1.0.0.zip"
+    "download": "https://github.com/miyakosodati/miyakosodati.github.io/releases/download/bokashi-v1.1.5/MYS_Bokashi_v1.1.5.zip"
   },
   "MYS_PanelShot": {
     "version": "2.13.5",
@@ -16,8 +16,8 @@
     "download": "https://github.com/miyakosodati/miyakosodati.github.io/releases/download/panelshot-v2.13.5/MYS_PanelShot_v2.13.5.zip"
   },
   "MYS_WeightIchiba": {
-    "version": "2.0.5",
+    "version": "2.2.2",
     "page": "https://miyakosodati.com/tools/ichiba/",
-    "download": "https://github.com/miyakosodati/miyakosodati.github.io/releases/download/ichiba-v2.0.5/MYS_WeightIchiba_v2.0.5.zip"
+    "download": "https://github.com/miyakosodati/miyakosodati.github.io/releases/download/ichiba-v2.2.2/MYS_WeightIchiba_v2.2.2.zip"
   }
 }
