@@ -19,5 +19,10 @@
     "version": "2.2.2",
     "page": "https://miyakosodati.com/tools/ichiba/",
     "download": "https://github.com/miyakosodati/miyakosodati.github.io/releases/download/ichiba-v2.2.2/MYS_WeightIchiba_v2.2.2.zip"
+  },
+  "MYS_UVMirror": {
+    "version": "1.0.0",
+    "page": "https://miyakosodati.com/tools/uvmirror/",
+    "download": "https://github.com/miyakosodati/miyakosodati.github.io/releases/download/uvmirror-v1.0.0/MYS_UVMirror_v1.0.0.zip"
   }
 }

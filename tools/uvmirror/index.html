@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MYS UVMirror — 頂点番号を変えないUVミラー | MYS Tools</title>
+<meta name="description" content="頂点番号を一切変えずにUVだけを左右対称にミラーするMaya用無償ツール。スキンウェイト・ブレンドシェイプ・キャッシュは無傷。部分ミラー・UDIM振り分け・診断リスト付き、商用利用可。">
+<meta property="og:title" content="MYS UVMirror — UVのシンメトリがズレたら、コレ。">
+<meta property="og:description" content="頂点番号を一切変えないUVミラー。スキンウェイト/ブレンドシェイプ/キャッシュは無傷のまま、UVだけを左右対称に。Maya 2020–2026対応の無償ツール。">
+<meta property="og:url" content="https://miyakosodati.com/tools/uvmirror/">
+<meta property="og:image" content="https://miyakosodati.com/assets/img/uvmirror/summary.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="logo" href="/"><span>MYS</span> Tools</a>
+    <a class="item" href="/#tools">ツール</a>
+    <a class="item" href="/eula/">EULA</a>
+    <a class="item" href="/contact/">お問い合わせ</a>
+  </div>
+</header>
+
+<div class="wrap tool-body">
+
+  <div class="tool-head">
+    <div class="crumb"><a href="/">MYS Tools</a> / UVMirror</div>
+    <h1>MYS UVMirror <span style="font-size:16px;color:var(--tx3)">v1.0.0</span></h1>
+    <div class="tag">頂点番号を変えない UV ミラー — スキンウェイトもブレンドシェイプも無傷のまま、UV だけを左右対称に</div>
+    <div class="badges">
+      <span class="bd dcc">Maya 2020–2026</span>
+      <span class="bd">Windows</span>
+      <span class="bd">外部依存なし</span>
+      <span class="bd">無償・商用利用可</span>
+    </div>
+    <div class="dl-row">
+      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/uvmirror-v1.0.0/MYS_UVMirror_v1.0.0.zip">ダウンロード（v1.0.0）</a>
+      <div class="dl-note">ダウンロード・使用により<a href="/eula/">使用許諾契約（EULA）</a>に同意したものとみなされます。社外への再配布はできません。</div>
+    </div>
+  </div>
+
+  <img class="figure" src="/assets/img/uvmirror/summary.png" alt="MYS UVMirror — UVのシンメトリがズレたら、コレ。">
+
+  <h2 class="sec">できること</h2>
+  <ul>
+    <li>従来の「半分削除 → ミラー → マージ」は頂点番号が総入れ替えになり、スキンウェイトやブレンドシェイプ、書き出し済みキャッシュが壊れます。UVMirror はジオメトリに一切触れず <strong>UV 配列だけを書き換える</strong>ため、<strong>頂点番号・フェース番号・スキン・ブレンドシェイプすべて無傷</strong>です。</li>
+    <li><strong>メッシュ全体でも、選択したコンポーネントだけの部分ミラーでも</strong>。フェース選択なら面単位、頂点・エッジ・UV 選択なら頂点単位で反映され、左右どちら側を選んでも同じ結果になります。</li>
+    <li>UV モードは2種類。<strong>「重ねる」</strong>で左右 1 枚のテクスチャを共有、<strong>「U 軸で反転」</strong>で左右を別領域に描き分け。U オフセット 1.0 で<strong>隣の UDIM タイルへの振り分け</strong>もできます。</li>
+    <li>左右対応は<strong>バインドポーズの座標</strong>から取るため、ポーズ中やブレンドシェイプ変形中でも正しくミラーできます。対応が取れなかった箇所は<strong>診断リスト</strong>に列挙され、「Maya で選択」でそのまま確認できます。</li>
+  </ul>
+
+  <img class="figure" src="/assets/img/uvmirror/uimap.png" alt="MYS UVMirror UI機能マップ — 各セクションの役割">
+  <!-- 操作GIFができたらこの下に追加: <img class="figure" src="/assets/img/uvmirror/gif-1.gif" alt=""> -->
+
+  <h2 class="sec">動作環境</h2>
+  <table class="spec">
+    <tr><th>対応ソフト</th><td>Autodesk Maya 2020 〜 2026（Windows）/ PySide2・PySide6 両対応（自動判別）</td></tr>
+    <tr><th>追加インストール</th><td>不要。外部ライブラリに依存しません。</td></tr>
+    <tr><th>配布物</th><td>zip 1ファイル（ドラッグ&ドロップインストーラ同梱）</td></tr>
+  </table>
+
+  <h2 class="sec">入れかた</h2>
+  <img class="figure" src="/assets/img/common/install-guide.png" alt="MYS Mayaツール共通インストールガイド — install_～.py をビューポートへドラッグ&amp;ドロップするだけ">
+  <p>Maya を起動し、zip を展開したフォルダの <code>install_MYS_UVMirror.py</code> を<strong>ビューポートへドラッグ&amp;ドロップするだけ</strong>です。ファイルのコピーとシェルフボタンの作成まで自動で行われ、再起動なしでそのまま使えます。</p>
+  <p>手動でインストールする場合の手順は、同梱の README.txt にまとめてあります。アンインストールはコピーされたファイルとシェルフボタンを削除するだけです。</p>
+
+  <h2 class="sec">承知しておきたいこと</h2>
+  <ul>
+    <li>履歴のあるメッシュへは履歴経由で書き込むため <strong>Ctrl+Z でそのまま戻せます</strong>。履歴のないメッシュのみ API 直接書き込みとなり、その場合はツール内の<strong>「元に戻す」ボタン</strong>で実行前の UV に復元してください（自動でバックアップされています）。</li>
+    <li>左右対応は頂点の位置から取ります。左右の位置ずれが大きいモデルでは「位置許容誤差」を調整してください。対応が取れなかった箇所は診断リストに表示されます。</li>
+  </ul>
+
+  <h2 class="sec">更新履歴</h2>
+  <table class="spec">
+    <tr><th>v1.0.0（2026-08-10）</th><td>初回公開</td></tr>
+  </table>
+
+  <p style="margin-top:26px">不具合報告・要望は <a href="/contact/">お問い合わせフォーム</a> からお願いします。</p>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fl">
+      <a href="https://x.com/miyakosodati">X（@miyakosodati）</a>
+      <a href="/contact/">お問い合わせ・バグ報告</a>
+      <a href="/eula/">EULA（使用許諾）</a>
+    </div>
+    © 都ソダチ / MYS Tools
+  </div>
+</footer>
+
+</body>
+</html>
