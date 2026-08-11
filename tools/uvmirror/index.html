@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MYS UVMirror — 頂点番号を変えないUVミラー | MYS Tools</title>
 <meta name="description" content="頂点番号を一切変えずにUVだけを左右対称にミラーするMaya用無償ツール。スキンウェイト・ブレンドシェイプ・キャッシュは無傷。部分ミラー・UDIM振り分け・診断リスト付き、商用利用可。">
-<meta property="og:title" content="MYS UVMirror — UVのシンメトリがズレたら、コレ。">
-<meta property="og:description" content="頂点番号を一切変えないUVミラー。スキンウェイト/ブレンドシェイプ/キャッシュは無傷のまま、UVだけを左右対称に。Maya 2020–2026対応の無償ツール。">
+<meta property="og:title" content="MYS UVMirror — UVシンメトリが崩れたら、こちら。">
+<meta property="og:description" content="頂点番号を一切変えないUVミラー。モデルFIX後も頂点番号を気にせず、片面だけ調整してミラーが可能。部分ミラー・対称UVの重ね合わせ・UDIM振り分け・診断リスト付き。Maya 2020–2026対応の無償ツール。">
 <meta property="og:url" content="https://miyakosodati.com/tools/uvmirror/">
 <meta property="og:image" content="https://miyakosodati.com/assets/img/uvmirror/summary.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -41,11 +41,11 @@
     </div>
   </div>
 
-  <img class="figure" src="/assets/img/uvmirror/summary.png" alt="MYS UVMirror — UVのシンメトリがズレたら、コレ。">
+  <img class="figure" src="/assets/img/uvmirror/summary.png" alt="MYS UVMirror — UVシンメトリが崩れたら、こちら。">
 
   <h2 class="sec">できること</h2>
   <ul>
-    <li>従来の「半分削除 → ミラー → マージ」は頂点番号が総入れ替えになり、スキンウェイトやブレンドシェイプ、書き出し済みキャッシュが壊れます。UVMirror はジオメトリに一切触れず <strong>UV 配列だけを書き換える</strong>ため、<strong>頂点番号・フェース番号・スキン・ブレンドシェイプすべて無傷</strong>です。</li>
+    <li>UVMirror はジオメトリに一切触れず、<strong>UV 配列だけを書き換えます</strong>。メッシュ単位での「半分削除 → ミラー → マージ」では頂点番号が変わってしまい、関連する機能にも波及しますが、本ツールでは<strong>それを無傷で実行</strong>できます。</li>
     <li><strong>メッシュ全体でも、選択したコンポーネントだけの部分ミラーでも</strong>。フェース選択なら面単位、頂点・エッジ・UV 選択なら頂点単位で反映され、左右どちら側を選んでも同じ結果になります。</li>
     <li>UV モードは2種類。<strong>「重ねる」</strong>で左右 1 枚のテクスチャを共有、<strong>「U 軸で反転」</strong>で左右を別領域に描き分け。U オフセット 1.0 で<strong>隣の UDIM タイルへの振り分け</strong>もできます。</li>
     <li>左右対応は<strong>バインドポーズの座標</strong>から取るため、ポーズ中やブレンドシェイプ変形中でも正しくミラーできます。対応が取れなかった箇所は<strong>診断リスト</strong>に列挙され、「Maya で選択」でそのまま確認できます。</li>
