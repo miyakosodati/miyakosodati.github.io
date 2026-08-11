@@ -27,7 +27,7 @@
 
   <div class="tool-head">
     <div class="crumb"><a href="/">MYS Tools</a> / UVMirror</div>
-    <h1>MYS UVMirror <span style="font-size:16px;color:var(--tx3)">v1.0.0</span></h1>
+    <h1>MYS UVMirror <span style="font-size:16px;color:var(--tx3)">v1.8.0</span></h1>
     <div class="tag">頂点番号を変えない UV ミラー — スキンウェイトもブレンドシェイプも無傷のまま、UV だけを左右対称に</div>
     <div class="badges">
       <span class="bd dcc">Maya 2020–2026</span>
@@ -36,7 +36,7 @@
       <span class="bd">無償・商用利用可</span>
     </div>
     <div class="dl-row">
-      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/uvmirror-v1.0.0/MYS_UVMirror_v1.0.0.zip">ダウンロード（v1.0.0）</a>
+      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/uvmirror-v1.8.0/MYS_UVMirror_v1.8.0.zip">ダウンロード（v1.8.0）</a>
       <div class="dl-note">ダウンロード・使用により<a href="/eula/">使用許諾契約（EULA）</a>に同意したものとみなされます。社外への再配布はできません。</div>
     </div>
   </div>
@@ -46,8 +46,8 @@
   <h2 class="sec">できること</h2>
   <ul>
     <li>UVMirror はジオメトリに一切触れず、<strong>UV 配列だけを書き換えます</strong>。メッシュ単位での「半分削除 → ミラー → マージ」では頂点番号が変わってしまい、関連する機能にも波及しますが、本ツールでは<strong>それを無傷で実行</strong>できます。</li>
-    <li><strong>メッシュ全体でも、選択したコンポーネントだけの部分ミラーでも</strong>。フェース選択なら面単位、頂点・エッジ・UV 選択なら頂点単位で反映され、左右どちら側を選んでも同じ結果になります。</li>
-    <li>UV モードは2種類。<strong>「重ねる」</strong>で左右 1 枚のテクスチャを共有、<strong>「U 軸で反転」</strong>で左右を別領域に描き分け。U オフセット 1.0 で<strong>隣の UDIM タイルへの振り分け</strong>もできます。</li>
+    <li><strong>メッシュ全体でも、選択したコンポーネントだけの部分ミラーでも</strong>。選択時は選択が属する <strong>UV アイランド単位</strong>で処理され、左右どちら側を選んでも同じ結果になります。UV エディタで UV を選んでおくと、対象の島が一意に決まります。</li>
+    <li>UV モードは2種類。<strong>「重ねる」</strong>で左右 1 枚のテクスチャを共有、<strong>「広げる」</strong>で左右を別領域に描き分け。広げる基準は<strong>中央 / その場 / 選択基準の3種類</strong>で、「その場でミラー」なら、もう片方の島がある場所へそのまま収められます。U オフセット 1.0 で<strong>隣の UDIM タイルへの振り分け</strong>もできます。</li>
     <li>左右対応は<strong>バインドポーズの座標</strong>から取るため、ポーズ中やブレンドシェイプ変形中でも正しくミラーできます。対応が取れなかった箇所は<strong>診断リスト</strong>に列挙され、「Maya で選択」でそのまま確認できます。</li>
   </ul>
 
@@ -74,6 +74,7 @@
 
   <h2 class="sec">更新履歴</h2>
   <table class="spec">
+    <tr><th>v1.8.0（2026-08-11）</th><td>「広げる」（旧: U 軸で反転）の基準を3種類に拡張（中央 / その場 / 選択基準）。「選択コンポーネント」処理をUVアイランド単位に変更。UI文言を全体的に見直し</td></tr>
     <tr><th>v1.0.0（2026-08-10）</th><td>初回公開</td></tr>
   </table>
 
