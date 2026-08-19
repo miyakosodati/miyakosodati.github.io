@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MYS CSweep — Sweep Meshをリアルタイム操作 | MYS Tools</title>
+<meta name="description" content="Maya標準のSweep Mesh(sweepMeshCreator)を1ウィンドウでリアルタイム操作する無償ツール。カーブ作成・プリセット生成・スライダー調整・テーパカーブ・量産まで。Maya 2022–2026対応、商用利用可。">
+<meta property="og:title" content="MYS CSweep — 優秀なSweepMeshを、もっと使いやすく。">
+<meta property="og:description" content="カーブ作成 → 生成 → リアルタイム調整を1ウィンドウで完結。髪・ヒモ向けのSweep Hairプリセットと量産機能、AEと完全同期するテーパカーブ内蔵。Maya 2022–2026対応の無償ツール。">
+<meta property="og:url" content="https://miyakosodati.com/tools/csweep/">
+<meta property="og:image" content="https://miyakosodati.com/assets/img/csweep/summary.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="logo" href="/"><span>MYS</span> Tools</a>
+    <a class="item" href="/#tools">ツール</a>
+    <a class="item" href="/eula/">EULA</a>
+    <a class="item" href="/contact/">お問い合わせ</a>
+  </div>
+</header>
+
+<div class="wrap tool-body">
+
+  <div class="tool-head">
+    <div class="crumb"><a href="/">MYS Tools</a> / CSweep</div>
+    <h1>MYS CSweep <span style="font-size:16px;color:var(--tx3)">v3.7.1</span></h1>
+    <div class="tag">Maya 標準の Sweep Mesh を1ウィンドウでリアルタイム操作 — CSweep の C は、Casual の C</div>
+    <div class="badges">
+      <span class="bd dcc">Maya 2022–2026</span>
+      <span class="bd">Windows</span>
+      <span class="bd">外部依存なし</span>
+      <span class="bd">無償・商用利用可</span>
+    </div>
+    <div class="dl-row">
+      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/csweep-v3.7.1/MYS_CSweep_v3.7.1.zip">ダウンロード（v3.7.1）</a>
+      <div class="dl-note">ダウンロード・使用により<a href="/eula/">使用許諾契約（EULA）</a>に同意したものとみなされます。社外への再配布はできません。</div>
+    </div>
+  </div>
+
+  <img class="figure" src="/assets/img/csweep/summary.png" alt="MYS CSweep — 優秀なSweepMeshを、もっと使いやすく。">
+
+  <h2 class="sec">できること</h2>
+  <ul>
+    <li>Maya 標準の Sweep Mesh（sweepMeshCreator ノード）を、<strong>カーブ作成 → 生成 → 調整まで1ウィンドウ</strong>で操作できます。アトリビュートエディタを行き来する必要はありません。</li>
+    <li>ワンクリック生成プリセットを搭載。<strong>Sweep Default</strong> で標準生成、<strong>Sweep Hair</strong> なら髪の毛・ヒモ向けの<strong>テーパ付きプリセット</strong>で一発生成できます（既定値は設定ウィンドウで変更可能）。</li>
+    <li>生成後は<strong>スライダーでリアルタイム調整</strong>。ドラッグ中もビューポートに即反映され、1ドラッグ = 1アンドゥで Ctrl+Z も安心。タイプ切替（Rectangle / Line / Arc）で固有パラメータも自動で入れ替わります。</li>
+    <li>AE と同じ<strong>「カーブのテーパ」カーブをツール内に埋め込み</strong>。アトリビュートエディタと完全同期します。</li>
+    <li>パラメータの<strong>コピー / ペースト</strong>に加え、<strong>「コピーしたパラメータで生成」</strong>でカーブを選ぶだけの<strong>量産</strong>に対応。回転・テーパカーブを含めるかもトグルで選べます。</li>
+  </ul>
+
+  <img class="figure" src="/assets/img/csweep/uimap.png" alt="MYS CSweep UI機能マップ — 各セクションの役割">
+
+  <h2 class="sec">実際の操作</h2>
+  <video class="figure" src="/assets/img/csweep/demo-1.mp4" autoplay loop muted playsinline controls></video>
+  <p style="font-size:13px;color:var(--tx3);margin-top:-14px">カーブからスイープを生成し、タイプ切替とスライダーでリアルタイムに形状を追い込む様子（アトリビュートエディタとも完全同期）。</p>
+
+  <h2 class="sec">動作環境</h2>
+  <table class="spec">
+    <tr><th>対応ソフト</th><td>Autodesk Maya 2022 〜 2026（Windows）/ Python 3 専用 / PySide2・PySide6 両対応（自動判別）</td></tr>
+    <tr><th>非対応</th><td>Maya 2020 / 2021（本ツールが使用する sweepMeshCreator ノードが Maya 2022 以降の標準機能のため）</td></tr>
+    <tr><th>追加インストール</th><td>不要。外部ライブラリに依存しません。</td></tr>
+    <tr><th>配布物</th><td>zip 1ファイル（ドラッグ&ドロップインストーラ同梱）</td></tr>
+  </table>
+
+  <h2 class="sec">入れかた</h2>
+  <img class="figure" src="/assets/img/common/install-guide.png" alt="MYS Mayaツール共通インストールガイド — install_～.py をビューポートへドラッグ&amp;ドロップするだけ">
+  <p>Maya を起動し、zip を展開したフォルダの <code>install_MYS_CSweep.py</code> を<strong>ビューポートへドラッグ&amp;ドロップするだけ</strong>です。ファイルのコピーとシェルフボタンの作成まで自動で行われ、再起動なしでそのまま使えます。</p>
+  <p>手動でインストールする場合の手順は、同梱の README.txt にまとめてあります。アンインストールはコピーされたファイルとシェルフボタンを削除するだけです。</p>
+
+  <h2 class="sec">承知しておきたいこと</h2>
+  <ul>
+    <li>カーブ作成直後に CV（コントロールバーテックス）を選択しにくい場合は、設定ウィンドウの<strong>「CV 選択優先度」</strong>を適用してください。Maya の選択優先度を一時的に引き上げます（「元に戻す」でいつでも復元できます。プリファレンスの選択プリセット表示は「カスタム」になります）。</li>
+    <li>設定ウィンドウで変更した値（Sweep Hair の既定値など）は Maya の optionVar に保存されます。「デフォルト値にリセット」で工場出荷値へ戻せます。</li>
+  </ul>
+
+  <h2 class="sec">更新履歴</h2>
+  <table class="spec">
+    <tr><th>v3.7.1（2026-08-19）</th><td>一般公開開始</td></tr>
+  </table>
+
+  <p style="margin-top:26px">不具合報告・要望は <a href="/contact/">お問い合わせフォーム</a> からお願いします。</p>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fl">
+      <a href="https://x.com/miyakosodati">X（@miyakosodati）</a>
+      <a href="/contact/">お問い合わせ・バグ報告</a>
+      <a href="/eula/">EULA（使用許諾）</a>
+    </div>
+    © 都ソダチ / MYS Tools
+  </div>
+</footer>
+
+</body>
+</html>
