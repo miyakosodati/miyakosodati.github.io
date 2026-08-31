@@ -27,7 +27,7 @@
 
   <div class="tool-head">
     <div class="crumb"><a href="/">MYS Tools</a> / Weight Ichiba</div>
-    <h1>MYS Weight Ichiba（壱場） <span style="font-size:16px;color:var(--tx3)">v2.3.0</span></h1>
+    <h1>MYS Weight Ichiba（壱場） <span style="font-size:16px;color:var(--tx3)">v2.3.1</span></h1>
     <div class="tag">スキンウェイト作業ツール一式 — 5つの主要機能を、ランチャー及び各ツール上部からいつでも呼び出し</div>
     <div class="badges">
       <span class="bd dcc">Maya 2020–2026</span>
@@ -36,7 +36,7 @@
       <span class="bd">無償・商用利用可</span>
     </div>
     <div class="dl-row">
-      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/ichiba-v2.3.0/MYS_WeightIchiba_v2.3.0.zip">ダウンロード（v2.3.0）</a>
+      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/ichiba-v2.3.1/MYS_WeightIchiba_v2.3.1.zip">ダウンロード（v2.3.1）</a>
       <div class="dl-note">ダウンロード・使用により<a href="/eula/">使用許諾契約（EULA）</a>に同意したものとみなされます。社外への再配布はできません。</div>
     </div>
   </div>
@@ -93,6 +93,7 @@
 
   <h2 class="sec">更新履歴</h2>
   <table class="spec">
+    <tr><th>v2.3.1（2026-08-31）</th><td>WeightContainer: エクスポート中の進捗表示で、別のウィンドウが一瞬画面に出ることがある問題を修正</td></tr>
     <tr><th>v2.3.0（2026-08-30）</th><td>WeightCanvas: メッシュ読み込み後に骨をリネーム・追加・削除するとウェイト列が表示されなくなる問題を修正（構成変化を自動検知して再ロード）。WeightStrokeを大幅改良。距離判定に「表面（地続き）」を追加（肘の内側など近接面への塗り漏れを防止・既定）。C/S/D/Xのショートカット上書き機能（ON/OFF可）。ブラシにフォールオフを追加（中心ほど強く、縁は滑らかに減衰）。塗りの適用を一定間隔に変更し、低強度でも加算・減算が一気に飽和しなくなりました。内部キャッシュ刷新で数万頂点でも軽快に。ブラシ半径はメッシュサイズに自動適応。インフルエンス増減後のスキンでウェイトが別スロットに書かれる問題を修正</td></tr>
     <tr><th>v2.2.2（2026-08-06）</th><td>WeightCanvasのコアを再実装し、数万頂点のメッシュでも固まらず動作するように改良。Canvas/MirrorCheckerのミラー処理を共通ロジックに統一し、Canvasでも頂点単位のウェイトミラーが可能に</td></tr>
     <tr><th>v2.0.5（2026-08-05）</th><td>一般公開開始</td></tr>
