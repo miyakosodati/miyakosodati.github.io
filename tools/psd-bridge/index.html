@@ -35,7 +35,7 @@
       <span class="bd">無償・商用利用可</span>
     </div>
     <div class="dl-row">
-      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/psdbridge-2026-07-31/MYS_PSDBridge_2026-07-31.zip">ダウンロード（2026-07-31版）</a>
+      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/psdbridge-2026-08-31/MYS_PSDBridge_2026-08-31.zip">ダウンロード（2026-08-31版）</a>
       <div class="dl-note">ダウンロード・使用により<a href="/eula/">使用許諾契約（EULA）</a>に同意したものとみなされます。社外への再配布はできません。</div>
     </div>
   </div>
@@ -70,11 +70,13 @@
     <li><strong>UV の島の外は描けません。</strong> Painter は UV の島に覆われたテクセルしか描画できないため、島の外側は透明のまま書き出されます。</li>
     <li><strong>Photoshop のクリッピングマスクは、取り込み時に Painter 側へそのままは持ち込めません</strong>（Painter API に設定する口が無いため）。取り込み時の扱いはオプションで選べます。</li>
     <li><strong>調整レイヤーは対象外です。</strong> Painter に対応するレイヤーが無いため変換されません。</li>
+    <li><strong>レイヤー名の絵文字・ハングル・Mac 由来の「〜」など、OS の文字コードに無い文字は取り込み時に置き換わります</strong>（Painter 側の制約。日本語の名前はそのまま通ります）。取り込み前のスキャンで該当レイヤーが分かります。</li>
     <li>SP 独自のブレンドや Normal 合成は Photoshop のブレンドモードに 1:1 対応しないため、データ系チャンネルは近似になります（BaseColor 等の通常ブレンドは忠実です）。</li>
   </ul>
 
   <h2 class="sec">更新履歴</h2>
   <table class="spec">
+    <tr><th>2026-08-31</th><td>取り込み: レイヤー名に OS の文字コードへ変換できない文字があると取り込み全体が失敗していた問題、大きな PSD でマスクや画像が空（赤バツ）になることがあった問題を修正。失敗時にどのレイヤーかを表示。書き出し: 単色にまとめる際にわずかな色差を切り捨てたレイヤーをログに警告。診断用の記録ファイルを追加</td></tr>
     <tr><th>2026-07-31</th><td>初回公開（書き出し / 取り込み / べた塗り+マスク / クリッピングマスク書き出し）</td></tr>
   </table>
 
