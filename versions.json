@@ -1,9 +1,9 @@
 {
   "_comment": "MYSツールの更新チェック用。将来ツール側から参照する。バージョン更新時にここも更新すること。",
   "MYS_PSDBridge": {
-    "version": "2026-08-31",
+    "version": "2026-09-01",
     "page": "https://miyakosodati.com/tools/psd-bridge/",
-    "download": "https://github.com/miyakosodati/miyakosodati.github.io/releases/download/psdbridge-2026-08-31/MYS_PSDBridge_2026-08-31.zip"
+    "download": "https://github.com/miyakosodati/miyakosodati.github.io/releases/download/psdbridge-2026-09-01/MYS_PSDBridge_2026-09-01.zip"
   },
   "MYS_Bokashi": {
     "version": "1.1.5",
