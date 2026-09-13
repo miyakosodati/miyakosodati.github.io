@@ -29,5 +29,10 @@
     "version": "3.7.9",
     "page": "https://miyakosodati.com/tools/csweep/",
     "download": "https://github.com/miyakosodati/miyakosodati.github.io/releases/download/csweep-v3.7.9/MYS_CSweep_v3.7.9.zip"
+  },
+  "MYS_BlendMaker": {
+    "version": "1.0.0",
+    "page": "https://miyakosodati.com/tools/blendmaker/",
+    "download": "https://github.com/miyakosodati/miyakosodati.github.io/releases/download/blendmaker-v1.0.0/MYS_BlendMaker_v1.0.0.zip"
   }
 }

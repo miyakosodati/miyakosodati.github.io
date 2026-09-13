@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MYS BlendMaker — ブレンドシェイプ制作・管理 | MYS Tools</title>
+<meta name="description" content="フェイシャルを中心としたブレンドシェイプ制作を1ウィンドウで管理する無償ツール。ARKit 52テンプレート同梱、ターゲット×スロットのマトリクス、EditStartで直接編集、合成・左右分割などのターゲット演算。Maya 2020–2026対応、商用利用可。">
+<meta property="og:title" content="MYS BlendMaker — ブレンドシェイプの”めんどくさい”を”楽”な作業へ！">
+<meta property="og:description" content="テンプレートで「何を作るか」を先に決めて、マトリクスで進捗を見ながらターゲットを直接編集。ストック取込・ターゲット演算・バックアップまで1ウィンドウ。Maya 2020–2026対応の無償ツール。">
+<meta property="og:url" content="https://miyakosodati.com/tools/blendmaker/">
+<meta property="og:image" content="https://miyakosodati.com/assets/img/blendmaker/summary.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="logo" href="/"><span>MYS</span> Tools</a>
+    <a class="item" href="/#tools">ツール</a>
+    <a class="item" href="/eula/">EULA</a>
+    <a class="item" href="/contact/">お問い合わせ</a>
+  </div>
+</header>
+
+<div class="wrap tool-body">
+
+  <div class="tool-head">
+    <div class="crumb"><a href="/">MYS Tools</a> / BlendMaker</div>
+    <h1>MYS BlendMaker <span style="font-size:16px;color:var(--tx3)">v1.0.0</span></h1>
+    <div class="tag">フェイシャルを中心としたブレンドシェイプ制作を、テンプレート × マトリクスで1ウィンドウ管理</div>
+    <div class="badges">
+      <span class="bd dcc">Maya 2020–2026</span>
+      <span class="bd">Windows</span>
+      <span class="bd">外部依存なし</span>
+      <span class="bd">無償・商用利用可</span>
+    </div>
+    <div class="dl-row">
+      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/blendmaker-v1.0.0/MYS_BlendMaker_v1.0.0.zip">ダウンロード（v1.0.0）</a>
+      <div class="dl-note">ダウンロード・使用により<a href="/eula/">使用許諾契約（EULA）</a>に同意したものとみなされます。社外への再配布はできません。</div>
+    </div>
+  </div>
+
+  <img class="figure" src="/assets/img/blendmaker/summary.png" alt="MYS BlendMaker — ブレンドシェイプの”めんどくさい”を”楽”な作業へ！">
+
+  <h2 class="sec">できること</h2>
+  <ul>
+    <li><strong>ターゲットテンプレートから「何を作るか」を先に用意</strong>できます。<strong>ARKit 52 テンプレートを同梱</strong>しているので、VTuber・ゲーム向けのパーフェクトシンク対応も迷わずスタート。枠なしの「空のセット」からオリジナル構成で始めることもできます。</li>
+    <li>顔・まつ毛・眉毛・歯など、<strong>連動するメッシュを「スロット」として色分け管理</strong>。同じ表情のターゲットをスロット横断でまとめて扱えます。</li>
+    <li><strong>ターゲット × スロットのマトリクス</strong>でセルを選んで<strong>［EditStart］→ スカルプト →［EditEnd］</strong>。空ターゲットの作成からスカルプト編集モードの出入りまでボタン1つで、いま何個できていて残り何個かは<strong>進捗バー</strong>が教えてくれます。</li>
+    <li>既にターゲットを持つメッシュも大丈夫。<strong>「ストックへインポート」で既存ターゲットや表情メッシュを取り込み</strong>、名称が一致するものはまとめて差し込めます。</li>
+    <li><strong>ターゲット演算（合成・スケール・左右分割）</strong>をプレビュー付きで搭載。ミラー・反転・左右対称化、ターゲットのメッシュ書き出し、<strong>バックアップ保存 / 復元</strong>まで1ウィンドウで完結します。</li>
+  </ul>
+
+  <img class="figure" src="/assets/img/blendmaker/uimap.png" alt="MYS BlendMaker UI機能マップ — 各セクションの役割">
+
+  <h2 class="sec">動作環境</h2>
+  <table class="spec">
+    <tr><th>対応ソフト</th><td>Autodesk Maya 2020 〜 2026（Windows）/ PySide2・PySide6 両対応（自動判別）</td></tr>
+    <tr><th>追加インストール</th><td>不要。外部ライブラリに依存しません。</td></tr>
+    <tr><th>配布物</th><td>zip 1ファイル（ドラッグ&ドロップインストーラ同梱）</td></tr>
+  </table>
+
+  <h2 class="sec">入れかた</h2>
+  <img class="figure" src="/assets/img/common/install-guide.png" alt="MYS Mayaツール共通インストールガイド — install_～.py をビューポートへドラッグ&amp;ドロップするだけ">
+  <p>Maya を起動し、zip を展開したフォルダの <code>install_MYS_BlendMaker.py</code> を<strong>ビューポートへドラッグ&amp;ドロップするだけ</strong>です。ファイルのコピーとシェルフボタンの作成まで自動で行われ、再起動なしでそのまま使えます。</p>
+  <p>手動でインストールする場合の手順は、同梱の README.txt にまとめてあります。アンインストールはコピーされたファイルとシェルフボタンを削除するだけです。</p>
+
+  <h2 class="sec">承知しておきたいこと</h2>
+  <ul>
+    <li>ツールがシーンに保存するのは<strong>セット情報の network ノード（MYS_BM_～）1個だけ</strong>です。「ツールデータ全削除」でいつでも消せて、消しても blendShape とターゲットは素のまま残ります。実ターゲットのリネームも行いません（紐づけで管理します）。</li>
+    <li>ターゲット名は ARKit のような英語名で管理し、<strong>実ターゲット名が違っていても「一致名称の一括リネーム」や紐づけで合わせられます</strong>。</li>
+    <li>編集中（EditStart 〜 EditEnd）は、編集対象を分かりやすくするため他スロットのメッシュ選択を制限します。</li>
+  </ul>
+
+  <h2 class="sec">更新履歴</h2>
+  <table class="spec">
+    <tr><th>v1.0.0（2026-09-13）</th><td>一般公開開始</td></tr>
+  </table>
+
+  <p style="margin-top:26px">不具合報告・要望は <a href="/contact/">お問い合わせフォーム</a> からお願いします。</p>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fl">
+      <a href="https://x.com/miyakosodati">X（@miyakosodati）</a>
+      <a href="/contact/">お問い合わせ・バグ報告</a>
+      <a href="/eula/">EULA（使用許諾）</a>
+    </div>
+    © 都ソダチ / MYS Tools
+  </div>
+</footer>
+
+</body>
+</html>
