@@ -27,7 +27,7 @@
 
   <div class="tool-head">
     <div class="crumb"><a href="/">MYS Tools</a> / BlendMaker</div>
-    <h1>MYS BlendMaker <span style="font-size:16px;color:var(--tx3)">v1.0.5</span></h1>
+    <h1>MYS BlendMaker <span style="font-size:16px;color:var(--tx3)">v1.0.8</span></h1>
     <div class="tag">フェイシャルを中心としたブレンドシェイプ制作を、テンプレート × マトリクスで1ウィンドウ管理</div>
     <div class="badges">
       <span class="bd dcc">Maya 2020–2026</span>
@@ -36,7 +36,7 @@
       <span class="bd">無償・商用利用可</span>
     </div>
     <div class="dl-row">
-      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/blendmaker-v1.0.5/MYS_BlendMaker_v1.0.5.zip">ダウンロード（v1.0.5）</a>
+      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/blendmaker-v1.0.8/MYS_BlendMaker_v1.0.8.zip">ダウンロード（v1.0.8）</a>
       <div class="dl-note">ダウンロード・使用により<a href="/eula/">使用許諾契約（EULA）</a>に同意したものとみなされます。社外への再配布はできません。</div>
     </div>
   </div>
@@ -75,6 +75,7 @@
 
   <h2 class="sec">更新履歴</h2>
   <table class="spec">
+    <tr><th>v1.0.8（2026-09-16）</th><td>Maya側でターゲットメッシュを接続したまま作られたblendShapeで、ターゲット演算やエクスポートの結果が古い形・空になる問題を修正（接続中のターゲットは接続メッシュから最新の形を読み取り）。接続中ターゲットへの書き込み操作は警告して中止するように</td></tr>
     <tr><th>v1.0.5（2026-09-15）</th><td>複数スロット登録時に進捗バーが0%のまま動かない問題と、取り込みで割り当てたターゲットのセルが「—」表示のままになる問題を修正。用語を「反転（左右を入れ替え）/シンメトリ化（片側を基準に対称化）」に統一し、頂点編集の文言を「原型に戻す」「平均化」に変更</td></tr>
     <tr><th>v1.0.1（2026-09-14）</th><td>原点から離れた位置のメッシュ（ワールド基準のblendShape）で新規ターゲットがズレて作られる問題を修正。移動値がターゲットに混ざった場合の「位置オフセット補正」（自動検出付き）を追加。列の一時OFFをヘッダに表示し、編集開始時に自動解除。ストック全削除を追加</td></tr>
     <tr><th>v1.0.0（2026-09-13）</th><td>一般公開開始</td></tr>
