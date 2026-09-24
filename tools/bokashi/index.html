@@ -27,8 +27,8 @@
 
   <div class="tool-head">
     <div class="crumb"><a href="/">MYS Tools</a> / Bokashi</div>
-    <h1>MYS Bokashi <span style="font-size:16px;color:var(--tx3)">v1.1.5</span></h1>
-    <div class="tag">高さ基準のグラデーションを UV に焼いて画像出力（ぼかし）</div>
+    <h1>MYS Bokashi <span style="font-size:16px;color:var(--tx3)">v1.4.1</span></h1>
+    <div class="tag">高さ・任意の向き基準のグラデーションを UV に焼いて画像出力（ぼかし）</div>
     <div class="badges">
       <span class="bd dcc">Maya 2020–2026</span>
       <span class="bd">Windows</span>
@@ -36,7 +36,7 @@
       <span class="bd">無償・商用利用可</span>
     </div>
     <div class="dl-row">
-      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/bokashi-v1.1.5/MYS_Bokashi_v1.1.5.zip">ダウンロード（v1.1.5）</a>
+      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/bokashi-v1.4.1/MYS_Bokashi_v1.4.1.zip">ダウンロード（v1.4.1）</a>
       <div class="dl-note">ダウンロード・使用により<a href="/eula/">使用許諾契約（EULA）</a>に同意したものとみなされます。社外への再配布はできません。</div>
     </div>
   </div>
@@ -45,7 +45,7 @@
 
   <h2 class="sec">できること</h2>
   <ul>
-    <li>メッシュの<strong>高さを基準に、グループごとに異なるグラデーション</strong>を UV 空間にベイクできます（最大4グループ）。グラデーションのほかにも、<strong>UVアイランド・IDマップ・ワイヤーフレーム</strong>まで、テクスチャの下地作業をこれ一本で。</li>
+    <li>メッシュの<strong>高さを基準に、グループごとに異なるグラデーション</strong>を UV 空間にベイクできます（最大4グループ）。軸は X / Y / Z に加えて<strong>「Free」で角度を指定でき、傾いた頭部など軸に沿っていないメッシュにも掛けられます</strong>。グラデーションのほかにも、<strong>UVアイランド・IDマップ・ワイヤーフレーム</strong>まで、テクスチャの下地作業をこれ一本で。</li>
     <li>個別の画像出力のほか、<strong>PSDとしてまとめて出力</strong>も可能です。</li>
     <li>プレビューを確認しながらパラメータを調整できます。</li>
   </ul>
@@ -73,6 +73,7 @@
 
   <h2 class="sec">更新履歴</h2>
   <table class="spec">
+    <tr><th>v1.4.1（2026-09-24）</th><td>グラデーションの向きを自由に指定できる「Free」軸を追加（上方向をX/Z角度で傾け、傾いた頭部などにも対応）。軸指定をX/Y/Z/Freeのボタン切り替えに変更し、空間指定は廃止して常にワールド基準に。効かない設定項目は自動グレーアウト+理由をツールチップ表示</td></tr>
     <tr><th>v1.1.5（2026-08-06）</th><td>PSD出力の透過不具合・グラデーションエディタの座標ずれ・起動時のウィンドウ欠け・プレビュー失敗時に表示が戻らない問題などを修正。ハンドル操作も軽量化</td></tr>
     <tr><th>v1.0.0（2026-08-01）</th><td>初回公開</td></tr>
   </table>
