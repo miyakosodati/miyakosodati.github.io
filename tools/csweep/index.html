@@ -27,7 +27,7 @@
 
   <div class="tool-head">
     <div class="crumb"><a href="/">MYS Tools</a> / CSweep</div>
-    <h1>MYS CSweep <span style="font-size:16px;color:var(--tx3)">v3.7.9</span></h1>
+    <h1>MYS CSweep <span style="font-size:16px;color:var(--tx3)">v3.13.0</span></h1>
     <div class="tag">Maya 標準の Sweep Mesh を1ウィンドウでCasualにリアルタイム編集</div>
     <div class="badges">
       <span class="bd dcc">Maya 2022–2026</span>
@@ -36,7 +36,7 @@
       <span class="bd">無償・商用利用可</span>
     </div>
     <div class="dl-row">
-      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/csweep-v3.7.9/MYS_CSweep_v3.7.9.zip">ダウンロード（v3.7.9）</a>
+      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/csweep-v3.13.0/MYS_CSweep_v3.13.0.zip">ダウンロード（v3.13.0）</a>
       <div class="dl-note">ダウンロード・使用により<a href="/eula/">使用許諾契約（EULA）</a>に同意したものとみなされます。社外への再配布はできません。</div>
     </div>
   </div>
@@ -46,6 +46,7 @@
   <h2 class="sec">できること</h2>
   <ul>
     <li>Maya 標準の Sweep Mesh 機能を、<strong>Curve作成 → Sweep生成 → パラメータ調整までツール上で完結</strong>できます。<strong>Curve / Mesh を選択するだけでアトリビュートをツール上に反映</strong>するため、パラメータへのアクセス速度が跳ね上がります。</li>
+    <li><strong>ベジェ変換つきの「ペン」</strong>を搭載。鉛筆のように描くと、<strong>離した瞬間に少ないアンカーのベジェカーブへ自動変換</strong>されます。構築アンカー数は「自動 / 指定」で後からでも作り直せ、角は自動検出で保持。従来の鉛筆そのままの出力（EP）も選べます。</li>
     <li>生成プリセットを搭載。<strong>Sweep Default</strong> で標準生成、<strong>Sweep Hair</strong> なら髪の毛向けの<strong>テーパ付きプリセット</strong>で一発生成できます（既定値は設定ウィンドウで変更可能）。</li>
     <li>生成後は<strong>スライダーでリアルタイム調整</strong>。1ドラッグ = 1アンドゥで Ctrl+Z も安心。タイプ切替（Rectangle / Line / Arc）で固有パラメータも自動で入れ替わります。</li>
     <li>ツール上で調整したパラメータも、<strong>アトリビュートエディタと完全同期</strong>します。</li>
@@ -57,6 +58,8 @@
   <h2 class="sec">実際の操作</h2>
   <video class="figure" src="/assets/img/csweep/demo-1.mp4" autoplay loop muted playsinline controls></video>
   <p style="font-size:13px;color:var(--tx3);margin-top:-14px">全6ステップの注釈付き使い方動画。カーブ作成 → Sweep 生成 → スライダー調整から、Sweep Hair のテーパ付き生成・アトリビュートエディタとの同期までを一巡できます。</p>
+  <video class="figure" src="/assets/img/csweep/demo-2.mp4" autoplay loop muted playsinline controls></video>
+  <p style="font-size:13px;color:var(--tx3);margin-top:-14px">v3.13.0 で追加された「ペン」のデモ。フリーハンドで描いたストロークが、離した瞬間に少ないアンカーのベジェカーブへ自動変換され、そのままスイープにできます。</p>
 
   <h2 class="sec">動作環境</h2>
   <table class="spec">
@@ -79,6 +82,7 @@
 
   <h2 class="sec">更新履歴</h2>
   <table class="spec">
+    <tr><th>v3.13.0（2026-10-04）</th><td>ベジェ変換つきの「ペン」を追加 — フリーハンドで描くと少ないアンカーのベジェカーブへ自動変換（構築アンカー数は自動 / 指定、角の自動検出つき。従来の鉛筆そのままの出力も選択可）。カーブ作成直後の CV 選択優先度が元に戻ってしまうことがある問題と、セクションの開閉でウィンドウが伸び続ける問題も修正</td></tr>
     <tr><th>v3.7.9（2026-08-31）</th><td>起動時に「別のウィンドウが一瞬見える」ことがある問題を修正。あわせてウィンドウの位置とサイズを記憶して次回も同じ場所で開くようにし、起動時にMayaのメインウィンドウが前面へ出てしまう挙動も抑制（起動直後のキーボードフォーカスは自動では移らず、クリックで入ります）</td></tr>
     <tr><th>v3.7.1（2026-08-19）</th><td>一般公開開始</td></tr>
   </table>
