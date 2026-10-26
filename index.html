@@ -24,23 +24,30 @@
   </div>
 </header>
 
-<div class="wrap" style="margin-top:18px">
-  <div style="border:1px solid #2b8a9d;border-radius:10px;background:rgba(26,33,44,.55);padding:12px 18px;font-size:13.5px;line-height:1.75;color:#c9d4e2">
-    <div>
-      <strong style="color:#4fd1c5">お知らせ（2026-10-26）</strong>&nbsp;&nbsp;<strong style="color:#e8edf4">MYS BlendMaker v1.2.2 を公開しました。</strong>全ターゲットをウェイト 1.0 で順に撮影し、名前付きの<strong style="color:#e8edf4">コンタクトシート（表情一覧画像）1 枚に一括書き出しする［CAPTURE］</strong>を追加。監修・レビュー・進捗共有にそのまま使えます（バックアップ復元の改善も同梱）。詳しくは <a href="/tools/blendmaker/">BlendMaker のページ</a>へ。
-    </div>
-    <div style="margin-top:8px;padding-top:8px;border-top:1px solid #2a3442">
-      <strong style="color:#4fd1c5">お知らせ（2026-10-22）</strong>&nbsp;&nbsp;話題となっている PHP の脆弱性（CVE-2026-109618 / CVE-2026-109619）について: 本サイトは GitHub Pages による静的配信のみで、PHP を含むサーバーサイドのプログラムを一切使用していないため、<strong style="color:#e8edf4">本件の影響はありません</strong>。配布している各ツールは Maya / Substance 3D Painter 用の Python スクリプトであり、こちらも本件とは無関係です。
-    </div>
-  </div>
-</div>
-
-<div class="hero">
+<div class="hero" style="padding:60px 0 44px">
   <div class="wrap">
     <h1>Mayaちゃんは、<br><span class="grad">やればできる子</span>。</h1>
     <p class="lead">現役アーティストが制作した、標準機能だけでは物足りない部分を補完した商用利用可の無償ツール群。
     現場の業務ストレスが少しでも軽減されますように。</p>
     <div class="by">開発: 都ソダチ（フリーランス 3DCGアーティスト）</div>
+  </div>
+</div>
+
+<div class="wrap" style="margin:0 auto 6px">
+  <!-- お知らせ帯: 左=PHP告知(常時表示) / 右=更新情報 直近3件(新しい順に入れ替え) -->
+  <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:stretch">
+    <div style="flex:1 1 340px;min-width:280px;border:1px solid #2b8a9d;border-radius:10px;background:rgba(43,138,157,.10);padding:12px 16px;font-size:13px;line-height:1.65;color:#c9d4e2">
+      <strong style="color:#e8edf4">PHP の脆弱性（CVE-2026-109618 / 109619）の影響はありません</strong><br>
+      本サイトは GitHub Pages による静的配信のみで、PHP を含むサーバーサイドのプログラムを使用していません。配布ツールは Maya / Substance 3D Painter 用の Python スクリプトです。<span style="color:#9aa7b8">（2026-10-22）</span>
+    </div>
+    <div style="flex:1 1 400px;min-width:280px;border:1px solid #2a3442;border-radius:10px;background:rgba(26,33,44,.6);padding:12px 16px;font-size:13px;line-height:1.65;color:#c9d4e2">
+      <div style="font-size:12.5px;font-weight:800;color:#4fd1c5;letter-spacing:.5px;margin-bottom:4px">更新情報</div>
+      <div style="display:flex;flex-direction:column;gap:5px">
+        <div><span style="color:#4fd1c5;font-weight:700">10/26</span>&nbsp;<a href="/tools/blendmaker/"><strong>BlendMaker v1.2.2</strong></a> — 全表情を1枚のコンタクトシートに一括撮影する［CAPTURE］を追加</div>
+        <div><span style="color:#4fd1c5;font-weight:700">10/04</span>&nbsp;<a href="/tools/csweep/"><strong>CSweep v3.13.0</strong></a> — ベジェ変換つきの「ペン」で任意のカーブをそのまま手描き</div>
+        <div><span style="color:#4fd1c5;font-weight:700">09/24</span>&nbsp;<a href="/tools/bokashi/"><strong>Bokashi v1.4.1</strong></a> — 好きな角度でかけられるグラデーション（Free 軸）を追加</div>
+      </div>
+    </div>
   </div>
 </div>
 
