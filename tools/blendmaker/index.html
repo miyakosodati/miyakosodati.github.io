@@ -27,7 +27,7 @@
 
   <div class="tool-head">
     <div class="crumb"><a href="/">MYS Tools</a> / BlendMaker</div>
-    <h1>MYS BlendMaker <span style="font-size:16px;color:var(--tx3)">v1.1.0</span></h1>
+    <h1>MYS BlendMaker <span style="font-size:16px;color:var(--tx3)">v1.2.2</span></h1>
     <div class="tag">フェイシャルを中心としたブレンドシェイプ制作を、テンプレート × マトリクスで1ウィンドウ管理</div>
     <div class="badges">
       <span class="bd dcc">Maya 2020–2026</span>
@@ -36,7 +36,7 @@
       <span class="bd">無償・商用利用可</span>
     </div>
     <div class="dl-row">
-      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/blendmaker-v1.1.0/MYS_BlendMaker_v1.1.0.zip">ダウンロード（v1.1.0）</a>
+      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/blendmaker-v1.2.2/MYS_BlendMaker_v1.2.2.zip">ダウンロード（v1.2.2）</a>
       <div class="dl-note">ダウンロード・使用により<a href="/eula/">使用許諾契約（EULA）</a>に同意したものとみなされます。社外への再配布はできません。</div>
     </div>
   </div>
@@ -50,6 +50,7 @@
     <li><strong>ターゲット × スロットのマトリクス</strong>でセルを選んで<strong>［EditStart］→ スカルプト →［EditEnd］</strong>。空ターゲットの作成からスカルプト編集モードの出入りまでボタン1つで、いま何個できていて残り何個かは<strong>進捗バー</strong>が教えてくれます。</li>
     <li>既にターゲットを持つメッシュも大丈夫。<strong>「ストックへインポート」で既存ターゲットや表情メッシュを取り込み</strong>、名称が一致するものはまとめて差し込めます。</li>
     <li><strong>ターゲット演算（合成・スケール・左右分割）</strong>をプレビュー付きで搭載。反転（左右を入れ替え）・シンメトリ化（片側を基準に対称化）、ターゲットのメッシュ書き出し、<strong>バックアップ保存 / 復元</strong>まで1ウィンドウで完結します。</li>
+    <li><strong>［CAPTURE］で全ターゲットを1枚のコンタクトシート（表情一覧画像）に一括撮影</strong>できます。各ターゲットをウェイト1.0（全スロット同時）で正面から順に撮影し、名前付きのグリッド画像として書き出し。監修・レビュー・進捗共有にそのまま使えます（カメラは正面自動フィット / 今のビューを選択可、未作成の枠は「未作成」コマに。撮影は非表示の専用パネルで行うため作業中の視点は動きません）。</li>
   </ul>
 
   <img class="figure" src="/assets/img/blendmaker/uimap.png" alt="MYS BlendMaker UI機能マップ — 各セクションの役割">
@@ -75,6 +76,7 @@
 
   <h2 class="sec">更新履歴</h2>
   <table class="spec">
+    <tr><th>v1.2.2（2026-10-26）</th><td>［CAPTURE］ボタンを追加。全ターゲット枠をウェイト1.0で順に撮影し、名前付きのコンタクトシート（表情一覧画像）1枚に書き出し（カメラ=正面自動フィット/今のビュー、1コマの大きさ・列数・ニュートラル先頭・1コマずつのPNG保存などのオプション付き。撮影は非表示パネルで行い作業中の視点は動かない）。バックアップ復元も改善し、復元先をフルパスで確認・同名メッシュが複数ある場合は復元先を選択可能に</td></tr>
     <tr><th>v1.1.0（2026-10-02）</th><td>「原型編集」モードを追加。スロット表の［原型編集］からベース形状をスカルプト編集し、「原型へ確定/破棄」を選択。確定すると作成済みターゲットは差分として新しい原型に追従（メッシュ接続中のターゲットにも反映）。※スキン済みはバインド形状が変わる・頂点数が変わる編集は対象外</td></tr>
     <tr><th>v1.0.8（2026-09-16）</th><td>Maya側でターゲットメッシュを接続したまま作られたblendShapeで、ターゲット演算やエクスポートの結果が古い形・空になる問題を修正（接続中のターゲットは接続メッシュから最新の形を読み取り）。接続中ターゲットへの書き込み操作は警告して中止するように</td></tr>
     <tr><th>v1.0.5（2026-09-15）</th><td>複数スロット登録時に進捗バーが0%のまま動かない問題と、取り込みで割り当てたターゲットのセルが「—」表示のままになる問題を修正。用語を「反転（左右を入れ替え）/シンメトリ化（片側を基準に対称化）」に統一し、頂点編集の文言を「原型に戻す」「平均化」に変更</td></tr>
