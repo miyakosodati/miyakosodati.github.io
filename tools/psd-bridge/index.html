@@ -38,6 +38,7 @@
       <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/psdbridge-2026-09-01/MYS_PSDBridge_2026-09-01.zip">ダウンロード（2026-09-01版）</a>
       <div class="dl-note">ダウンロード・使用により<a href="/eula/">使用許諾契約（EULA）</a>に同意したものとみなされます。社外への再配布はできません。</div>
     </div>
+    <div style="margin-top:12px;font-size:13px;color:var(--tx2);border:1px solid #2a3442;border-left:3px solid #4fd1c5;border-radius:6px;background:rgba(26,33,44,.5);padding:9px 13px;line-height:1.65"><strong style="color:#4fd1c5">最新の更新（2026-09-01版）</strong>　書き出しに「島の縁を広げる」を追加 — 統合テクスチャの継ぎ目の線を抑えます。 <a href="#history">→ 更新履歴</a></div>
   </div>
 
   <img class="figure" src="/assets/img/psd-bridge/summary.png" alt="MYS PSD Bridge — Painterのレイヤーを、構造ごとPhotoshopへ。">
@@ -74,7 +75,7 @@
     <li>SP 独自のブレンドや Normal 合成は Photoshop のブレンドモードに 1:1 対応しないため、データ系チャンネルは近似になります（BaseColor 等の通常ブレンドは忠実です）。</li>
   </ul>
 
-  <h2 class="sec">更新履歴</h2>
+  <h2 class="sec" id="history">更新履歴</h2>
   <table class="spec">
     <tr><th>2026-09-01</th><td>書き出し: 「島の縁を広げる」を追加（既定 8px）。UV の島の縁の色とアルファを UV 上で外側へ広げ、統合したテクスチャを 3D に貼ったときの継ぎ目の線を抑えます</td></tr>
     <tr><th>2026-08-31</th><td>取り込み: レイヤー名に OS の文字コードへ変換できない文字があると取り込み全体が失敗していた問題、大きな PSD でマスクや画像が空（赤バツ）になることがあった問題を修正。失敗時にどのレイヤーかを表示。書き出し: 単色にまとめる際にわずかな色差を切り捨てたレイヤーをログに警告。診断用の記録ファイルを追加</td></tr>
