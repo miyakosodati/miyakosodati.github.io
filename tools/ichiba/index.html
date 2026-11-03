@@ -27,7 +27,7 @@
 
   <div class="tool-head">
     <div class="crumb"><a href="/">MYS Tools</a> / Weight Ichiba</div>
-    <h1>MYS Weight Ichiba（壱場） <span style="font-size:16px;color:var(--tx3)">v2.3.1</span></h1>
+    <h1>MYS Weight Ichiba（壱場） <span style="font-size:16px;color:var(--tx3)">v2.16.0</span></h1>
     <div class="tag">スキンウェイト作業ツール一式 — 5つの主要機能を、ランチャー及び各ツール上部からいつでも呼び出し</div>
     <div class="badges">
       <span class="bd dcc">Maya 2020–2026</span>
@@ -36,7 +36,7 @@
       <span class="bd">無償・商用利用可</span>
     </div>
     <div class="dl-row">
-      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/ichiba-v2.3.1/MYS_WeightIchiba_v2.3.1.zip">ダウンロード（v2.3.1）</a>
+      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/ichiba-v2.16.0/MYS_WeightIchiba_v2.16.0.zip">ダウンロード（v2.16.0）</a>
       <div class="dl-note">ダウンロード・使用により<a href="/eula/">使用許諾契約（EULA）</a>に同意したものとみなされます。社外への再配布はできません。</div>
     </div>
   </div>
@@ -51,6 +51,7 @@
     <li><strong>WeightCanvas</strong> — ウェイトのテーブル表示 / 編集。Roller機能も組み込まれており、数値入力からスライダー調整まで手頃に行えます。</li>
     <li><strong>WeightContainer</strong> — ウェイトをストックして、エクスポート / インポートはもちろん、グループ管理や入れ替え機能も完備。</li>
     <li><strong>WeightMirrorChecker</strong> — 左右ミラーの差分チェック。対称崩れを素早く発見します。</li>
+    <li><strong>BoneGumi（ボーングミ / 骨組み）<span style="color:var(--ac)">NEW</span></strong> — 囲った範囲に骨を生やして、バインドして、ウェイトまで入れる骨セットアップツール。スカート・マント・尻尾などの揺れものを数クリックでセットアップできます。</li>
   </ul>
 
   <img class="figure" src="/assets/img/ichiba/toolmap.png" alt="MYS Weight Ichiba 収録ツール一覧">
@@ -71,8 +72,15 @@
   <img class="figure" src="/assets/img/ichiba/uimap-stroke.png" alt="MYS WeightStroke UI機能マップ — ブラシ式ウェイト塗り">
   <video class="figure" src="/assets/img/ichiba/demo-stroke.mp4" autoplay loop muted playsinline controls></video>
 
+  <h2 class="sec">BoneGumi を詳しく（NEW）</h2>
+  <img class="figure" src="/assets/img/ichiba/ui-bonegumi.png" alt="MYS BoneGumi — 囲った範囲に骨を生やして、バインドして、ウェイトまで" style="max-width:340px">
+  <p>範囲を指定（頂点 / フェース / メッシュ全体 / 閉じたカーブ / ビューに直接描く投げ縄）→ プレビューで骨の配置を確認 → 実行、の3ステップで<strong>骨の作成・バインド・ウェイト入れまで一気に完了</strong>します。1本チェーン / 剛体 / 複数チェーン（スカート・マントの列）に対応し、列数・骨数は自動 / 手動、「まっすぐ補正」や向きのプリセットも。作った組はシーンに記録され、<strong>骨を選んで［骨を編集］→「作り直す（置き換え）」で何度でも再調整</strong>できます（BoneGumi 以外で作った骨も構成を推定して編集可能）。</p>
+  <video class="figure" src="/assets/img/ichiba/demo-bonegumi.mp4" autoplay loop muted playsinline controls></video>
+  <p style="font-size:13px;color:var(--tx3);margin-top:-14px">全6ステップの注釈付きデモ。スカートの範囲指定 → プレビュー → 骨の作成とバインド → 骨の編集 → ポーズチェックまでを一巡できます。</p>
+
   <h2 class="sec">壱場ランチャーの動き</h2>
   <video class="figure" src="/assets/img/ichiba/demo-launcher.mp4" autoplay loop muted playsinline controls></video>
+  <p style="font-size:13px;color:var(--tx3);margin-top:-14px">パイメニューから選べるツールは BoneGumi が加わって 6 つに。何個でも並べて同時に使え、右クリックからまとめて閉じられます。</p>
 
   <h2 class="sec">動作環境</h2>
   <table class="spec">
@@ -93,6 +101,7 @@
 
   <h2 class="sec">更新履歴</h2>
   <table class="spec">
+    <tr><th>v2.16.0（2026-11-03）</th><td>新ツール「BoneGumi（ボーングミ / 骨組み）」を追加 — 囲った範囲に骨を生やして、バインドして、ウェイトまで入れる骨セットアップツール（範囲は選択 / 閉じたカーブ / 投げ縄 / メッシュ全体。1本チェーン / 剛体 / 複数チェーン、列数・骨数は自動/手動、まっすぐ補正、向きプリセット、作った組の記録と［骨を編集］での作り直しに対応）。ランチャーのパイメニューが6ツールに（中央ロゴも高解像度化）。WeightCanvas: ミラーの軸・方向を排他トグルに変更。WeightContainer: 未使用のNearest Joint Importを削除。同梱ファイルに mys_ui_style.py が追加されています（インストーラが自動でコピー）</td></tr>
     <tr><th>v2.3.1（2026-08-31）</th><td>WeightContainer: エクスポート中の進捗表示で、別のウィンドウが一瞬画面に出ることがある問題を修正</td></tr>
     <tr><th>v2.3.0（2026-08-30）</th><td>WeightCanvas: メッシュ読み込み後に骨をリネーム・追加・削除するとウェイト列が表示されなくなる問題を修正（構成変化を自動検知して再ロード）。WeightStrokeを大幅改良。距離判定に「表面（地続き）」を追加（肘の内側など近接面への塗り漏れを防止・既定）。C/S/D/Xのショートカット上書き機能（ON/OFF可）。ブラシにフォールオフを追加（中心ほど強く、縁は滑らかに減衰）。塗りの適用を一定間隔に変更し、低強度でも加算・減算が一気に飽和しなくなりました。内部キャッシュ刷新で数万頂点でも軽快に。ブラシ半径はメッシュサイズに自動適応。インフルエンス増減後のスキンでウェイトが別スロットに書かれる問題を修正</td></tr>
     <tr><th>v2.2.2（2026-08-06）</th><td>WeightCanvasのコアを再実装し、数万頂点のメッシュでも固まらず動作するように改良。Canvas/MirrorCheckerのミラー処理を共通ロジックに統一し、Canvasでも頂点単位のウェイトミラーが可能に</td></tr>
