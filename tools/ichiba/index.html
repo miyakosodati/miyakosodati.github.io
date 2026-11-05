@@ -27,7 +27,7 @@
 
   <div class="tool-head">
     <div class="crumb"><a href="/">MYS Tools</a> / Weight Ichiba</div>
-    <h1>MYS Weight Ichiba（壱場） <span style="font-size:16px;color:var(--tx3)">v2.16.0</span></h1>
+    <h1>MYS Weight Ichiba（壱場） <span style="font-size:16px;color:var(--tx3)">v2.19.0</span></h1>
     <div class="tag">スキンウェイト作業ツール一式 — 5つの主要機能を、ランチャー及び各ツール上部からいつでも呼び出し</div>
     <div class="badges">
       <span class="bd dcc">Maya 2020–2026</span>
@@ -36,10 +36,10 @@
       <span class="bd">無償・商用利用可</span>
     </div>
     <div class="dl-row">
-      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/ichiba-v2.16.0/MYS_WeightIchiba_v2.16.0.zip">ダウンロード（v2.16.0）</a>
+      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/ichiba-v2.19.0/MYS_WeightIchiba_v2.19.0.zip">ダウンロード（v2.19.0）</a>
       <div class="dl-note">ダウンロード・使用により<a href="/eula/">使用許諾契約（EULA）</a>に同意したものとみなされます。社外への再配布はできません。</div>
     </div>
-    <div style="margin-top:12px;font-size:13px;color:var(--tx2);border:1px solid #2a3442;border-left:3px solid #4fd1c5;border-radius:6px;background:rgba(26,33,44,.5);padding:9px 13px;line-height:1.65"><strong style="color:#4fd1c5">最新の更新（v2.16.0 / 2026-11-03）</strong>　新ツール「BoneGumi」を追加 — 囲った範囲に骨を生やして、バインドして、ウェイトまで。ランチャーは6ツールになりました。 <a href="#history">→ 更新履歴</a></div>
+    <div style="margin-top:12px;font-size:13px;color:var(--tx2);border:1px solid #2a3442;border-left:3px solid #4fd1c5;border-radius:6px;background:rgba(26,33,44,.5);padding:9px 13px;line-height:1.65"><strong style="color:#4fd1c5">最新の更新（v2.19.0 / 2026-11-05）</strong>　WeightStroke を改修（ヒートマップの色をカラーバーで変更 / Ctrl 押下中は一時減算）。あわせて 4K・高DPIモニタ対応を全ツールに実験的に導入しました。 <a href="#history">→ 更新履歴</a></div>
   </div>
 
   <img class="figure" src="/assets/img/ichiba/summary.png" alt="MYS Weight Ichiba — 散らばった道具を、一つの市場へ。">
@@ -102,6 +102,7 @@
 
   <h2 class="sec" id="history">更新履歴</h2>
   <table class="spec">
+    <tr><th>v2.19.0（2026-11-05）</th><td>【実験的】4K・高DPIモニタ対応を壱場の全ツールに導入 — Maya のインターフェース拡大率に合わせてウィンドウ・文字・ボタンがまとめて拡大します（等倍のときは従来と同じ表示。実験的な対応のため、環境により表示が崩れる場合があります）。WeightStroke を改修: 「ヒートマップの色」をカラーバーで自由に変更できるように（設定は保存、100%=白）、ペイント中に Ctrl を押している間だけ「一時減算」できるように（Shift の一時スムースと同じ仕組み）</td></tr>
     <tr><th>v2.16.0（2026-11-03）</th><td>新ツール「BoneGumi（ボーングミ / 骨組み）」を追加 — 囲った範囲に骨を生やして、バインドして、ウェイトまで入れる骨セットアップツール（範囲は選択 / 閉じたカーブ / 投げ縄 / メッシュ全体。1本チェーン / 剛体 / 複数チェーン、列数・骨数は自動/手動、まっすぐ補正、向きプリセット、作った組の記録と［骨を編集］での作り直しに対応）。ランチャーのパイメニューが6ツールに（中央ロゴも高解像度化）。WeightCanvas: ミラーの軸・方向を排他トグルに変更。WeightContainer: 未使用のNearest Joint Importを削除。同梱ファイルに mys_ui_style.py が追加されています（インストーラが自動でコピー）</td></tr>
     <tr><th>v2.3.1（2026-08-31）</th><td>WeightContainer: エクスポート中の進捗表示で、別のウィンドウが一瞬画面に出ることがある問題を修正</td></tr>
     <tr><th>v2.3.0（2026-08-30）</th><td>WeightCanvas: メッシュ読み込み後に骨をリネーム・追加・削除するとウェイト列が表示されなくなる問題を修正（構成変化を自動検知して再ロード）。WeightStrokeを大幅改良。距離判定に「表面（地続き）」を追加（肘の内側など近接面への塗り漏れを防止・既定）。C/S/D/Xのショートカット上書き機能（ON/OFF可）。ブラシにフォールオフを追加（中心ほど強く、縁は滑らかに減衰）。塗りの適用を一定間隔に変更し、低強度でも加算・減算が一気に飽和しなくなりました。内部キャッシュ刷新で数万頂点でも軽快に。ブラシ半径はメッシュサイズに自動適応。インフルエンス増減後のスキンでウェイトが別スロットに書かれる問題を修正</td></tr>
