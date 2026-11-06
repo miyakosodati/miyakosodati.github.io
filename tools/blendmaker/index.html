@@ -27,7 +27,7 @@
 
   <div class="tool-head">
     <div class="crumb"><a href="/">MYS Tools</a> / BlendMaker</div>
-    <h1>MYS BlendMaker <span style="font-size:16px;color:var(--tx3)">v1.2.3</span></h1>
+    <h1>MYS BlendMaker <span style="font-size:16px;color:var(--tx3)">v1.3.10</span></h1>
     <div class="tag">フェイシャルを中心としたブレンドシェイプ制作を、テンプレート × マトリクスで1ウィンドウ管理</div>
     <div class="badges">
       <span class="bd dcc">Maya 2020–2026</span>
@@ -36,10 +36,10 @@
       <span class="bd">無償・商用利用可</span>
     </div>
     <div class="dl-row">
-      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/blendmaker-v1.2.3/MYS_BlendMaker_v1.2.3.zip">ダウンロード（v1.2.3）</a>
+      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/blendmaker-v1.3.10/MYS_BlendMaker_v1.3.10.zip">ダウンロード（v1.3.10）</a>
       <div class="dl-note">ダウンロード・使用により<a href="/eula/">使用許諾契約（EULA）</a>に同意したものとみなされます。社外への再配布はできません。</div>
     </div>
-    <div style="margin-top:12px;font-size:13px;color:var(--tx2);border:1px solid #2a3442;border-left:3px solid #4fd1c5;border-radius:6px;background:rgba(26,33,44,.5);padding:9px 13px;line-height:1.65"><strong style="color:#4fd1c5">最新の更新（v1.2.3 / 2026-11-02）</strong>　直接編集（tweak）を見た目そのまま原型へ焼き込める「原型へ焼き込む」を追加しました。 <a href="#history">→ 更新履歴</a></div>
+    <div style="margin-top:12px;font-size:13px;color:var(--tx2);border:1px solid #2a3442;border-left:3px solid #4fd1c5;border-radius:6px;background:rgba(26,33,44,.5);padding:9px 13px;line-height:1.65"><strong style="color:#4fd1c5">最新の更新（v1.3.10 / 2026-11-06）</strong>　骨の動きを「基準 → 記録ポーズ」として保存し、効き 0〜100% で骨と連動ターゲットをまとめて動かせる「骨プリセット（体型）」を追加しました（例: 女性素体 → 男性骨格）。 <a href="#history">→ 更新履歴</a></div>
   </div>
 
   <img class="figure" src="/assets/img/blendmaker/summary.png" alt="MYS BlendMaker — ブレンドシェイプの”めんどくさい”を”楽”な作業へ！">
@@ -52,6 +52,7 @@
     <li>既にターゲットを持つメッシュも大丈夫。<strong>「ストックへインポート」で既存ターゲットや表情メッシュを取り込み</strong>、名称が一致するものはまとめて差し込めます。</li>
     <li><strong>ターゲット演算（合成・スケール・左右分割）</strong>をプレビュー付きで搭載。反転（左右を入れ替え）・シンメトリ化（片側を基準に対称化）、ターゲットのメッシュ書き出し、<strong>バックアップ保存 / 復元</strong>まで1ウィンドウで完結します。</li>
     <li><strong>［CAPTURE］で全ターゲットを1枚のコンタクトシート（表情一覧画像）に一括撮影</strong>できます。各ターゲットをウェイト1.0（全スロット同時）で正面から順に撮影し、名前付きのグリッド画像として書き出し。監修・レビュー・進捗共有にそのまま使えます（カメラは正面自動フィット / 今のビューを選択可、未作成の枠は「未作成」コマに。撮影は非表示の専用パネルで行うため作業中の視点は動きません）。</li>
+    <li><strong>「骨プリセット（体型）」で、骨の動きとターゲットをまとめて動かせます</strong>。骨の移動・回転・スケールを<strong>「基準 → 記録したポーズ」</strong>として保存し、効き 0〜100% のスライダーで、骨と連動するターゲット枠を一緒に行き来できます（例: 女性素体の骨を男性骨格に寄せる）。効き 50% を境に変更前／変更後の表示グループを切り替えることも可能です。あわせて<strong>「ポージングモード」</strong>では、骨の今の値を「戻り先」として記録し、自由にポーズを付けて確認 →［戻る］でワンボタンで元どおり（確認ポーズの名前保存にも対応）。</li>
   </ul>
 
   <img class="figure" src="/assets/img/blendmaker/uimap.png" alt="MYS BlendMaker UI機能マップ — 各セクションの役割">
@@ -77,6 +78,7 @@
 
   <h2 class="sec" id="history">更新履歴</h2>
   <table class="spec">
+    <tr><th>v1.3.10（2026-11-06）</th><td>「骨プリセット（体型）」を追加 — 骨の移動・回転・スケールを「基準 → 記録したポーズ」として保存し、効き 0〜100% のスライダーで骨と連動ターゲット枠をまとめて動かせます（例: 女性素体 → 男性骨格）。「新規」→「変更前の骨を記録」→骨を動かして「変更後の骨を記録」で作成。効き 50% を境に変更前／変更後の表示グループ切り替え、連動ターゲット枠の指定も可能。あわせて「ポージングモード」を追加 — 骨の今の値を「戻り先」に記録して自由にポーズ確認 →［戻る］で元どおり（Ctrl+Z 可）。付けたポーズは「確認ポーズ」として名前保存でき、体型を切り替えても同じ見え方で確認できます</td></tr>
     <tr><th>v1.2.3（2026-11-02）</th><td>「原型へ焼き込む」ボタンを追加。メッシュに直接編集（スカルプト等で動かしたまま残っている頂点移動）があるとき、見た目を変えずに原型（Orig）へ焼き込んで本体頂点チェックの警告を解消できる（焼き込めるメッシュがあるときだけ表示。実行前にメッシュごとの頂点数・最大移動量を確認。デフォーマ後の編集（pnts）は焼き込めないため内訳表示のうえ残置）</td></tr>
     <tr><th>v1.2.2（2026-10-26）</th><td>［CAPTURE］ボタンを追加。全ターゲット枠をウェイト1.0で順に撮影し、名前付きのコンタクトシート（表情一覧画像）1枚に書き出し（カメラ=正面自動フィット/今のビュー、1コマの大きさ・列数・ニュートラル先頭・1コマずつのPNG保存などのオプション付き。撮影は非表示パネルで行い作業中の視点は動かない）。バックアップ復元も改善し、復元先をフルパスで確認・同名メッシュが複数ある場合は復元先を選択可能に</td></tr>
     <tr><th>v1.1.0（2026-10-02）</th><td>「原型編集」モードを追加。スロット表の［原型編集］からベース形状をスカルプト編集し、「原型へ確定/破棄」を選択。確定すると作成済みターゲットは差分として新しい原型に追従（メッシュ接続中のターゲットにも反映）。※スキン済みはバインド形状が変わる・頂点数が変わる編集は対象外</td></tr>
