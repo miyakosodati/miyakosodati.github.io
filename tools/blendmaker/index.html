@@ -27,7 +27,7 @@
 
   <div class="tool-head">
     <div class="crumb"><a href="/">MYS Tools</a> / BlendMaker</div>
-    <h1>MYS BlendMaker <span style="font-size:16px;color:var(--tx3)">v1.4.17</span></h1>
+    <h1>MYS BlendMaker <span style="font-size:16px;color:var(--tx3)">v1.5.0</span></h1>
     <div class="tag">フェイシャルを中心としたブレンドシェイプ制作を、テンプレート × マトリクスで1ウィンドウ管理</div>
     <div class="badges">
       <span class="bd dcc">Maya 2020–2026</span>
@@ -36,10 +36,10 @@
       <span class="bd">無償・商用利用可</span>
     </div>
     <div class="dl-row">
-      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/blendmaker-v1.4.17/MYS_BlendMaker_v1.4.17.zip">ダウンロード（v1.4.17）</a>
+      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/blendmaker-v1.5.0/MYS_BlendMaker_v1.5.0.zip">ダウンロード（v1.5.0）</a>
       <div class="dl-note">ダウンロード・使用により<a href="/eula/">使用許諾契約（EULA）</a>に同意したものとみなされます。社外への再配布はできません。</div>
     </div>
-    <div style="margin-top:12px;font-size:13px;color:var(--tx2);border:1px solid #2a3442;border-left:3px solid #4fd1c5;border-radius:6px;background:rgba(26,33,44,.5);padding:9px 13px;line-height:1.65"><strong style="color:#4fd1c5">最新の更新（v1.4.17 / 2026-11-09）</strong>　ベイク / エクスポートに「作り直してリバインド」（作成ヒストリが入ったメッシュも一気に解消）を追加。ターゲット枠の右クリックリネームと、エクスポート名の不具合修正も。 <a href="#history">→ 更新履歴</a></div>
+    <div style="margin-top:12px;font-size:13px;color:var(--tx2);border:1px solid #2a3442;border-left:3px solid #4fd1c5;border-radius:6px;background:rgba(26,33,44,.5);padding:9px 13px;line-height:1.65"><strong style="color:#4fd1c5">最新の更新（v1.5.0 / 2026-11-09）</strong>　高 DPI（4K）モニタ対応を追加しました。Maya のインターフェース拡大率に合わせてウィンドウ・文字・ボタンが拡大します（等倍のときは従来どおり）。ボーンリンクの「ベイク / エクスポート」も引き続き利用できます。 <a href="#history">→ 更新履歴</a></div>
   </div>
 
   <img class="figure" src="/assets/img/blendmaker/summary.png" alt="MYS BlendMaker — ブレンドシェイプの”めんどくさい”を”楽”な作業へ！">
@@ -78,6 +78,7 @@
 
   <h2 class="sec" id="history">更新履歴</h2>
   <table class="spec">
+    <tr><th>v1.5.0（2026-11-09）</th><td>高 DPI（4K）モニタ対応を追加 — Maya のインターフェース拡大率に合わせて、ウィンドウ・文字・ボタンがまとめて拡大します（拡大率が等倍のときは従来と同じ表示）。同梱の mys_ui_style.py を使用します（インストーラが自動でコピーします）</td></tr>
     <tr><th>v1.4.17（2026-11-09）</th><td>ベイク / エクスポートの「エクスポートしてリバインド」に「メッシュを作り直してリバインド（ヒストリを持ち込まない）」を追加 — スキンやデフォーマ以外の作成ヒストリ（UV 編集など）が入ったメッシュでも、今の見た目をきれいなメッシュに作り直し、スキン・ブレンドシェイプ・マテリアル・表示レイヤーを付け直して一気にリバインドできます（元のメッシュは非表示グループへ退避）。あわせて、エクスポート時のグループ名が指定しても固定の名前になってしまう不具合を修正。ターゲット枠を右クリックメニューの「枠の名前を変更…」からリネームできるように（枠名に合わせてターゲット名もまとめて変更）</td></tr>
     <tr><th>v1.4.13（2026-11-08）</th><td>ボーンリンクに「ベイク / エクスポート」を追加 — 設定した骨の状態（今の見た目）をメッシュに焼き込んで別グループに複製し、骨格を目標の形に置き直して新しいバインドポーズでバインドし直して書き出せます。元のメッシュ・骨は非破壊（同じシーンに別グループで作成）、骨名・メッシュ名は元と同じなので Unity などへ書き出しても名前が変わりません。「新規プリセットでベイク」「エクスポートしてリバインド」の 2 方式に対応、ウェイトは頂点番号でそのままコピー</td></tr>
     <tr><th>v1.3.10（2026-11-06）</th><td>「ボーンリンク」を追加 — 骨の移動・回転・スケールを「基準 → 記録したポーズ」として保存し、効き 0〜100% のスライダーで骨と連動ターゲット枠をまとめて動かせます（フェイシャルと連動したポーズ違いの確認などに）。「新規」→「変更前の骨を記録」→骨を動かして「変更後の骨を記録」で作成。効き 50% を境に記録前／記録後の表示グループ切り替え、連動ターゲット枠の指定も可能。あわせて「ポージングモード」を追加 — 骨の今の値を「戻り先」に記録して自由にポーズ確認 →［戻る］で元どおり（Ctrl+Z 可）。付けたポーズは「確認ポーズ」として名前保存でき、骨のプリセットを切り替えても同じ見え方で確認できます</td></tr>
