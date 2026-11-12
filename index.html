@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MYS Tools — 都ソダチ | Maya・Substance Painter向け無償CGツール</title>
-<meta name="description" content="Maya・Substance 3D Painter の制作フローを速くする無償ツール群。実案件の現場から生まれ、商用利用可。開発: 都ソダチ">
+<title>MYS Tools — 都ソダチ | Maya・Substance Painter・Blender向け無償CGツール</title>
+<meta name="description" content="Maya・Substance 3D Painter・Blender の制作フローを速くする無償ツール群。実案件の現場から生まれ、商用利用可。開発: 都ソダチ">
 <meta property="og:title" content="MYS Tools — 都ソダチ">
-<meta property="og:description" content="Maya・Substance 3D Painter向けの無償CGツール群。すべて商用利用可。">
+<meta property="og:description" content="Maya・Substance 3D Painter・Blender向けの無償CGツール群。すべて商用利用可。">
 <meta property="og:url" content="https://miyakosodati.com/">
 <!-- TODO: OGP画像を用意したら有効化: <meta property="og:image" content="https://miyakosodati.com/assets/ogp.png"> -->
 <link rel="stylesheet" href="/assets/site.css">
@@ -38,14 +38,14 @@
   <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:stretch">
     <div style="flex:1 1 340px;min-width:280px;border:1px solid #2b8a9d;border-radius:10px;background:rgba(43,138,157,.10);padding:12px 16px;font-size:13px;line-height:1.65;color:#c9d4e2">
       <strong style="color:#e8edf4">PHP および Brotli（HTTP2Shell）の脆弱性の影響はありません</strong><br>
-      本サイトは GitHub Pages による静的配信のみで、サーバーサイドのプログラムを使用していません。配布している各ツールは Maya / Substance 3D Painter 用の Python スクリプトで、ネットワーク通信や圧縮データの展開処理を含まないことを確認済みです。<span style="color:#9aa7b8">（PHP: CVE-2026-109618 / 109619、Brotli: CVE-2026-111497。2026-10-29 更新）</span>
+      本サイトは GitHub Pages による静的配信のみで、サーバーサイドのプログラムを使用していません。配布している各ツールは Maya / Substance 3D Painter / Blender 用の Python スクリプトで、ネットワーク通信や圧縮データの展開処理を含まないことを確認済みです。<span style="color:#9aa7b8">（PHP: CVE-2026-109618 / 109619、Brotli: CVE-2026-111497。2026-10-29 更新）</span>
     </div>
     <div style="flex:1 1 400px;min-width:280px;border:1px solid #2a3442;border-radius:10px;background:rgba(26,33,44,.6);padding:12px 16px;font-size:13px;line-height:1.65;color:#c9d4e2">
       <div style="font-size:12.5px;font-weight:800;color:#4fd1c5;letter-spacing:.5px;margin-bottom:4px">更新情報</div>
       <div style="display:flex;flex-direction:column;gap:5px">
+        <div><span style="color:#4fd1c5;font-weight:700">11/13</span>&nbsp;<span style="color:#0e1116;background:#4fd1c5;border-radius:4px;padding:0 5px;font-size:11px;font-weight:900">NEW</span>&nbsp;<a href="/tools/panelshot-blender/"><strong>MYS PanelShot for Blender v1.0.0</strong></a> — PanelShot の Blender 版を公開（Blender 4.2 LTS〜の拡張機能、GPL-3.0）</div>
         <div><span style="color:#4fd1c5;font-weight:700">11/09</span>&nbsp;<strong style="color:#e8edf4">主要ツールが高DPI（4K）モニタ対応</strong> — <a href="/tools/bokashi/">Bokashi</a> / <a href="/tools/panelshot/">PanelShot</a> / <a href="/tools/uvmirror/">UVMirror</a> / <a href="/tools/csweep/">CSweep</a> を 4K 対応に（Maya の UI 拡大率に追従、等倍は従来どおり）</div>
         <div><span style="color:#4fd1c5;font-weight:700">11/09</span>&nbsp;<a href="/tools/blendmaker/"><strong>BlendMaker v1.5.0</strong></a> — 高DPI（4K）モニタ対応に（ボーンリンクの「ベイク / エクスポート」も掲載中）</div>
-        <div><span style="color:#4fd1c5;font-weight:700">11/05</span>&nbsp;<a href="/tools/ichiba/"><strong>Weight Ichiba v2.19.0</strong></a> — WeightStroke を改修（ヒートマップの色変更 / Ctrl 一時減算）＋4K・高DPI対応を実験導入</div>
       </div>
     </div>
   </div>
@@ -54,7 +54,7 @@
 <section id="tools">
   <div class="wrap">
     <h2>MYS Tools</h2>
-    <div class="sub">すべて無償・商用利用可。ダウンロードは本サイトからのみ行えます（<a href="/eula/">使用許諾</a>）。</div>
+    <div class="sub">すべて無償・商用利用可。Maya / Substance Painter 用ツールのダウンロードは本サイトからのみ行えます（<a href="/eula/">使用許諾</a>）。Blender 版は GPL-3.0 で配布しています。</div>
     <div class="grid">
 
       <a class="card" href="/tools/psd-bridge/">
@@ -79,6 +79,14 @@
         <h3>MYS PanelShot</h3>
         <p>選択メッシュを複数アングルから一括キャプチャし、正投影統合画像として出力。監修・資料・ポートフォリオに。</p>
         <div class="badges"><span class="bd dcc">Maya 2020–2026</span><span class="bd">外部依存なし</span></div>
+      </a>
+
+      <a class="card" href="/tools/panelshot-blender/">
+        <span class="st live">公開中</span>
+        <img class="icon" src="/assets/icons/panelshot.png" alt="MYS PanelShot for Blender">
+        <h3>MYS PanelShot for Blender</h3>
+        <p>PanelShot の Blender 版。ビューポートの見た目のまま、視点を動かさずに正投影パネルを一括出力。カスタム配置は Maya 版と互換。</p>
+        <div class="badges"><span class="bd dcc">Blender 4.2 LTS〜</span><span class="bd">GPL-3.0</span></div>
       </a>
 
       <a class="card" href="/tools/ichiba/">

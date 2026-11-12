@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MYS PanelShot for Blender — 正投影パネルを Blender でも一発出力 | MYS Tools</title>
+<meta name="description" content="Blender のビューポートの見た目のまま、複数アングルの正投影統合画像を一括出力する無償アドオン。2面図/3面図/8面図/9面図・カスタム対応、背景透過可。Blender 4.2 LTS 以降、GPL-3.0。">
+<meta property="og:title" content="MYS PanelShot for Blender — 監修・資料用の正投影パネルを、Blender でも一発で。">
+<meta property="og:description" content="2面図/3面図/8面図/9面図・カスタムの統合画像を一括出力。視点を動かさず撮影、3Dビューにプレビュー、背景透過対応。Blender 4.2 LTS 以降の無償アドオン（GPL-3.0）。">
+<meta property="og:url" content="https://miyakosodati.com/tools/panelshot-blender/">
+<meta property="og:image" content="https://miyakosodati.com/assets/img/panelshot-blender/summary.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="logo" href="/"><span>MYS</span> Tools</a>
+    <a class="item" href="/#tools">ツール</a>
+    <a class="item" href="/eula/">EULA</a>
+    <a class="item" href="/contact/">お問い合わせ</a>
+  </div>
+</header>
+
+<div class="wrap tool-body">
+
+  <div class="tool-head">
+    <div class="crumb"><a href="/">MYS Tools</a> / PanelShot for Blender</div>
+    <h1>MYS PanelShot for Blender <span style="font-size:16px;color:var(--tx3)">v1.0.0</span></h1>
+    <div class="tag">ビューポートの見た目のまま、複数アングルの正投影統合画像を一括出力する Blender アドオン</div>
+    <div class="badges">
+      <span class="bd dcc">Blender 4.2 LTS 〜</span>
+      <span class="bd">拡張機能（Extension）</span>
+      <span class="bd">GPL-3.0</span>
+      <span class="bd">無償・商用利用可</span>
+    </div>
+    <div class="dl-row">
+      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/panelshot-blender-v1.0.0/mys_panelshot-1.0.0.zip">ダウンロード（v1.0.0）</a>
+      <div class="dl-note">このアドオンは <a href="#license">GNU GPL v3（またはそれ以降）</a>で配布しています（Maya 版ツールの EULA は適用されません）。zip は<strong>展開せずに</strong>そのまま Blender へインストールしてください。</div>
+    </div>
+    <div style="margin-top:12px;font-size:13px;color:var(--tx2);border:1px solid #2a3442;border-left:3px solid #4fd1c5;border-radius:6px;background:rgba(26,33,44,.5);padding:9px 13px;line-height:1.65"><strong style="color:#4fd1c5">最新の更新（v1.0.0 / 2026-11-13）</strong>　一般公開を開始しました。Maya 版 <a href="/tools/panelshot/">MYS PanelShot</a> の Blender 移植版です。 <a href="#history">→ 更新履歴</a></div>
+  </div>
+
+  <img class="figure" src="/assets/img/panelshot-blender/summary.png" alt="MYS PanelShot for Blender — 監修・資料用の正投影パネルを、Blender でも一発で。">
+
+  <h2 class="sec">できること</h2>
+  <ul>
+    <li>モデルを複数アングルからまとめて撮影し、<strong>正投影統合画像（PNG）</strong>として出力します（<strong>2面図 / 3面図 / 8面図 / 9面図・カスタム</strong>）。</li>
+    <li>ビューポートの見た目のまま撮影します。シーンにカメラを作らず、<strong>作業中の視点も一切動きません</strong>。</li>
+    <li>3D ビューの左下に<strong>仕上がりのプレビュー</strong>を表示。出力前に構成と収まりを確認できます。</li>
+    <li>斜め角・縦角、モデルの正面軸、モチーフの画面比率、アスペクト比、<strong>1 コマの解像度（最大 4096 px）</strong>を指定可能。背景は<strong>透過</strong>とベタ色から選べます。</li>
+    <li>選択したもの（と子階層）だけを撮影することもできます。</li>
+    <li>カスタム配置は <a href="/tools/panelshot/">Maya 版</a>と互換の JSON で書き出し / 読み込みでき、同じレイアウトを両方で使い回せます。</li>
+    <li>表示は日本語 / English をワンクリックで切り替え。</li>
+  </ul>
+
+  <img class="figure" src="/assets/img/panelshot-blender/uimap.png" alt="MYS PanelShot for Blender UI機能マップ — 各セクションの役割">
+
+  <h2 class="sec">動作環境</h2>
+  <table class="spec">
+    <tr><th>対応ソフト</th><td>Blender 4.2 LTS 以降（4.2 LTS / 5.2 LTS で動作確認、Windows）</td></tr>
+    <tr><th>形式</th><td>Blender 拡張機能（Extension）。追加ライブラリは不要です。</td></tr>
+    <tr><th>配布物</th><td>zip 1ファイル（本体・LICENSE・NOTICE.txt）</td></tr>
+    <tr><th>場所</th><td>3D ビュー › サイドバー（N キー）› <strong>MYS</strong> タブ（タブ名はアドオン設定で変更可）</td></tr>
+  </table>
+
+  <h2 class="sec">入れかた</h2>
+  <p>ダウンロードした zip を<strong>展開せずに</strong>、Blender のウィンドウへ<strong>ドラッグ&amp;ドロップ</strong>するだけです。<br>
+  または、<strong>編集 › プリファレンス › アドオン</strong> を開き、右上の <strong>⌄</strong> メニューから<strong>「ディスクからインストール」</strong>で zip を選んでください。</p>
+  <p>インストール後、3D ビューで <strong>N キー</strong>を押してサイドバーを開き、<strong>MYS</strong> タブから使えます。アンインストールはプリファレンスのアドオン一覧から行えます。</p>
+
+  <h2 class="sec">承知しておきたいこと</h2>
+  <ul>
+    <li>撮影はビューポートの表示を基にするため、画質や表示内容（シェーディングモード・照明など）はビューポートの設定に従います。</li>
+    <li>プレビューの「自動更新」は既定で OFF です（重いシーンで編集中の負荷を避けるため）。設定を変えたときと更新ボタンでいつでも更新でき、自動更新を ON にすると編集・選択の変更に追従します。</li>
+    <li>.blend が未保存のときは、ピクチャフォルダ内の MYS_PanelShot フォルダに保存します（実際の保存先はパネルに表示されます）。</li>
+    <li>Blender 4.1 以前には対応していません。</li>
+  </ul>
+
+  <h2 class="sec" id="license">ライセンス</h2>
+  <p>Blender のアドオンは Blender 本体の Python API を使うため、GPL での配布が求められています。そのため本アドオンは <strong>GNU General Public License v3（またはそれ以降）</strong>で配布しており、Maya 版 MYS ツールの <a href="/eula/">EULA</a> は適用されません。</p>
+  <ul>
+    <li>商用プロジェクトを含め、自由に使用できます。出力した画像の権利は使用者に帰属します。</li>
+    <li>GPL の条件に従って、改変・再配布できます。</li>
+    <li>「MYS」「MYS PanelShot」「都ソダチ」の名称は GPL の許諾対象外です。改変版を配布する場合は別の名称を使い、オリジナルや作者公認であるかのような表示はしないでください（GPLv3 第7条に基づく追加条項。詳細は同梱の NOTICE.txt）。</li>
+    <li>無保証です。不具合の報告・要望は、本サイト配布のオリジナル版について <a href="/contact/">お問い合わせフォーム</a> で受け付けます。</li>
+  </ul>
+
+  <h2 class="sec" id="history">更新履歴</h2>
+  <table class="spec">
+    <tr><th>v1.0.0（2026-11-13）</th><td>一般公開開始</td></tr>
+  </table>
+
+  <p style="margin-top:26px">不具合報告・要望は <a href="/contact/">お問い合わせフォーム</a> からお願いします。</p>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fl">
+      <a href="https://x.com/miyakosodati">X（@miyakosodati）</a>
+      <a href="/contact/">お問い合わせ・バグ報告</a>
+      <a href="/eula/">EULA（使用許諾）</a>
+    </div>
+    © 都ソダチ / MYS Tools
+  </div>
+</footer>
+
+</body>
+</html>
