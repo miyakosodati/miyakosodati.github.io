@@ -27,7 +27,7 @@
 
   <div class="tool-head">
     <div class="crumb"><a href="/">MYS Tools</a> / PanelShot for Blender</div>
-    <h1>MYS PanelShot for Blender <span style="font-size:16px;color:var(--tx3)">v1.0.0</span></h1>
+    <h1>MYS PanelShot for Blender <span style="font-size:16px;color:var(--tx3)">v1.1.0</span></h1>
     <div class="tag">ビューポートの見た目のまま、複数アングルの正投影統合画像を一括出力する Blender アドオン</div>
     <div class="badges">
       <span class="bd dcc">Blender 4.2 LTS 〜</span>
@@ -36,10 +36,10 @@
       <span class="bd">無償・商用利用可</span>
     </div>
     <div class="dl-row">
-      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/panelshot-blender-v1.0.0/mys_panelshot-1.0.0.zip">ダウンロード（v1.0.0）</a>
+      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/panelshot-blender-v1.1.0/mys_panelshot-1.1.0.zip">ダウンロード（v1.1.0）</a>
       <div class="dl-note">このアドオンは <a href="#license">GNU GPL v3（またはそれ以降）</a>で配布しています（Maya 版ツールの EULA は適用されません）。zip は<strong>展開せずに</strong>そのまま Blender へインストールしてください。</div>
     </div>
-    <div style="margin-top:12px;font-size:13px;color:var(--tx2);border:1px solid #2a3442;border-left:3px solid #4fd1c5;border-radius:6px;background:rgba(26,33,44,.5);padding:9px 13px;line-height:1.65"><strong style="color:#4fd1c5">最新の更新（v1.0.0 / 2026-11-13）</strong>　一般公開を開始しました。Maya 版 <a href="/tools/panelshot/">MYS PanelShot</a> の Blender 移植版です。 <a href="#history">→ 更新履歴</a></div>
+    <div style="margin-top:12px;font-size:13px;color:var(--tx2);border:1px solid #2a3442;border-left:3px solid #4fd1c5;border-radius:6px;background:rgba(26,33,44,.5);padding:9px 13px;line-height:1.65"><strong style="color:#4fd1c5">最新の更新（v1.1.0 / 2026-11-13）</strong>　「対象を固定」と「カメラの高さ」を追加。シェーディング変更でもプレビューが自動更新されるようになり、パネルの並びも整理しました。 <a href="#history">→ 更新履歴</a></div>
   </div>
 
   <img class="figure" src="/assets/img/panelshot-blender/summary.png" alt="MYS PanelShot for Blender — 監修・資料用の正投影パネルを、Blender でも一発で。">
@@ -50,7 +50,8 @@
     <li>ビューポートの見た目のまま撮影します。シーンにカメラを作らず、<strong>作業中の視点も一切動きません</strong>。</li>
     <li>3D ビューの左下に<strong>仕上がりのプレビュー</strong>を表示。出力前に構成と収まりを確認できます。</li>
     <li>斜め角・縦角、モデルの正面軸、モチーフの画面比率、アスペクト比、<strong>1 コマの解像度（最大 4096 px）</strong>を指定可能。背景は<strong>透過</strong>とベタ色から選べます。</li>
-    <li>選択したもの（と子階層）だけを撮影することもできます。</li>
+    <li>選択したもの（と子階層）だけを撮影することもできます。<strong>［対象を固定］</strong>で撮影対象を保持すれば、ほかを選んで調整している間も対象は変わりません。</li>
+    <li><strong>カメラの高さ</strong>（対象の高さに対する %）で、注視点を上下にずらして収まりを調整できます。</li>
     <li>カスタム配置は <a href="/tools/panelshot/">Maya 版</a>と互換の JSON で書き出し / 読み込みでき、同じレイアウトを両方で使い回せます。</li>
     <li>表示は日本語 / English をワンクリックで切り替え。</li>
   </ul>
@@ -73,7 +74,7 @@
   <h2 class="sec">承知しておきたいこと</h2>
   <ul>
     <li>撮影はビューポートの表示を基にするため、画質や表示内容（シェーディングモード・照明など）はビューポートの設定に従います。</li>
-    <li>プレビューの「自動更新」は既定で OFF です（重いシーンで編集中の負荷を避けるため）。設定を変えたときと更新ボタンでいつでも更新でき、自動更新を ON にすると編集・選択の変更に追従します。</li>
+    <li>プレビューの「自動更新」は既定で ON です（編集・選択・ビューポートのシェーディング変更に追従）。重いシーンで編集が重く感じるときは OFF にし、更新ボタンで手動更新してください。</li>
     <li>.blend が未保存のときは、ピクチャフォルダ内の MYS_PanelShot フォルダに保存します（実際の保存先はパネルに表示されます）。</li>
     <li>Blender 4.1 以前には対応していません。</li>
   </ul>
@@ -89,6 +90,7 @@
 
   <h2 class="sec" id="history">更新履歴</h2>
   <table class="spec">
+    <tr><th>v1.1.0（2026-11-13）</th><td>「対象を固定」を追加 — 押した時点の選択（+子階層）を撮影対象として保持し、以後の選択変更に左右されません（固定した対象が削除された場合は警告を出して従来の動作に戻ります）／「カメラの高さ」を追加（Maya 版の Vertical Offset 相当。対象の高さに対する % で指定）／ビューポートのシェーディング変更（ソリッド / マテリアル、ライティング、MatCap など）でもプレビューを自動更新／プレビューの自動更新を既定 ON に／パネルの並びを「プレビュー → モード → 出力の背景 → 対象 → 角度 → 画角・出力 → 保存先」に整理</td></tr>
     <tr><th>v1.0.0（2026-11-13）</th><td>一般公開開始</td></tr>
   </table>
 
