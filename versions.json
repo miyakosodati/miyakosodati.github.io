@@ -35,6 +35,11 @@
     "page": "https://miyakosodati.com/tools/csweep/",
     "download": "https://github.com/miyakosodati/miyakosodati.github.io/releases/download/csweep-v3.14.0/MYS_CSweep_v3.14.0.zip"
   },
+  "MYS_CQuad": {
+    "version": "1.0.3",
+    "page": "https://miyakosodati.com/tools/cquad/",
+    "download": "https://github.com/miyakosodati/miyakosodati.github.io/releases/download/cquad-v1.0.3/MYS_CQuad_v1.0.3.zip"
+  },
   "MYS_BlendMaker": {
     "version": "1.5.0",
     "page": "https://miyakosodati.com/tools/blendmaker/",

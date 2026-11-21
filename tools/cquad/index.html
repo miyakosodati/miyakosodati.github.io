@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MYS CQuad — 三角ポリゴンを程よく四角に | MYS Tools</title>
+<meta name="description" content="三角ポリゴンだらけのメッシュを、程よく四角化するMaya用無償ツール。歪む所は無理せず三角のまま。形重視 / バランス / 数重視の3段階と色分けプレビュー付き、商用利用可。">
+<meta property="og:title" content="MYS CQuad — 三角ポリゴンを、程よく四角に。">
+<meta property="og:description" content="Maya標準の四角化より素直に組む、程よい四角化ツール。歪む所は無理せず三角のまま残し、形重視 / バランス / 数重視の3段階と色分けプレビューで、結果を確かめてから実行できます。Maya 2020–2026対応の無償ツール。">
+<meta property="og:url" content="https://miyakosodati.com/tools/cquad/">
+<meta property="og:image" content="https://miyakosodati.com/assets/img/cquad/summary.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="logo" href="/"><span>MYS</span> Tools</a>
+    <a class="item" href="/#tools">ツール</a>
+    <a class="item" href="/eula/">EULA</a>
+    <a class="item" href="/contact/">お問い合わせ</a>
+  </div>
+</header>
+
+<div class="wrap tool-body">
+
+  <div class="tool-head">
+    <div class="crumb"><a href="/">MYS Tools</a> / CQuad</div>
+    <h1>MYS CQuad <span style="font-size:16px;color:var(--tx3)">v1.0.3</span></h1>
+    <div class="tag">三角ポリゴンを「程よく」四角に — 歪む所は無理せず三角のまま</div>
+    <div class="badges">
+      <span class="bd dcc">Maya 2020–2026</span>
+      <span class="bd">Windows</span>
+      <span class="bd">外部依存なし</span>
+      <span class="bd">無償・商用利用可</span>
+    </div>
+    <div class="dl-row">
+      <a class="dl-btn" href="https://github.com/miyakosodati/miyakosodati.github.io/releases/download/cquad-v1.0.3/MYS_CQuad_v1.0.3.zip">ダウンロード（v1.0.3）</a>
+      <div class="dl-note">ダウンロード・使用により<a href="/eula/">使用許諾契約（EULA）</a>に同意したものとみなされます。社外への再配布はできません。</div>
+    </div>
+    <div style="margin-top:12px;font-size:13px;color:var(--tx2);border:1px solid #2a3442;border-left:3px solid #4fd1c5;border-radius:6px;background:rgba(26,33,44,.5);padding:9px 13px;line-height:1.65"><strong style="color:#4fd1c5">最新の更新（v1.0.3 / 2026-11-21）</strong>　一般公開を開始しました。 <a href="#history">→ 更新履歴</a></div>
+  </div>
+
+  <img class="figure" src="/assets/img/cquad/summary.png" alt="MYS CQuad — 三角ポリゴンを、程よく四角に。">
+
+  <h2 class="sec">できること</h2>
+  <ul>
+    <li>AI 生成モデルや三角化されたデータなど、<strong>三角ポリゴンだらけのメッシュを、Maya 標準の四角化（Quadrangulate）より素直な形で四角にまとめます</strong>。</li>
+    <li>めざしているのは<strong>完璧な四角化ではなく「程よい」四角化</strong>です。形のきれいな所はしっかり四角にし、無理に四角にすると歪む所は<strong>三角のまま残します</strong>。ループの流れを作り直すリトポとは別物で、<strong>手直しの土台を手早く作る</strong>ためのツールです。</li>
+    <li>隣り合う三角の組み合わせを、四角にしたときの形のきれいさ（内角が 90° に近いか / 平らか / 辺の長さの偏り）で採点し、<strong>メッシュ全体でよい組み合わせから順に</strong>決めます。余った三角も、組み替えで拾える分はできるだけ四角にします。</li>
+    <li>「四角化と形状の優先順位」は<strong>形重視 / バランス / 数重視</strong>の3段階。きれいさを取るか、四角の数を取るかを選べます。</li>
+    <li><strong>UV シーム / ハードエッジ / マテリアル境界</strong>の辺は消さずに残せます。フェースを選べば、その範囲だけを四角化することもできます。</li>
+    <li>［プレビュー］で四角化後の形を<strong>色分けして重ねて表示</strong>。設定を変えるとその場で更新されるので、結果を見比べてから［実行］できます（Ctrl+Z で戻せます）。</li>
+  </ul>
+
+  <img class="figure" src="/assets/img/cquad/uimap.png" alt="MYS CQuad UI機能マップ — 各セクションの役割">
+  <h2 class="sec">実際の操作</h2>
+  <video class="figure" src="/assets/img/cquad/demo-cquad.mp4" autoplay loop muted playsinline controls></video>
+  <p style="font-size:13px;color:var(--tx3);margin-top:-14px">起動 → メッシュを選んでプレビュー → 優先順位を切り替えて比較 → 実行、までの流れです。</p>
+
+  <h2 class="sec">動作環境</h2>
+  <table class="spec">
+    <tr><th>対応ソフト</th><td>Autodesk Maya 2020 〜 2026（Windows）/ PySide2・PySide6 両対応（自動判別）</td></tr>
+    <tr><th>追加インストール</th><td>不要。外部ライブラリに依存しません。</td></tr>
+    <tr><th>配布物</th><td>zip 1ファイル（ドラッグ&ドロップインストーラ同梱）</td></tr>
+  </table>
+
+  <h2 class="sec">入れかた</h2>
+  <img class="figure" src="/assets/img/common/install-guide.png" alt="MYS Mayaツール共通インストールガイド — install_～.py をビューポートへドラッグ&amp;ドロップするだけ">
+  <p>Maya を起動し、zip を展開したフォルダの <code>install_MYS_CQuad.py</code> を<strong>ビューポートへドラッグ&amp;ドロップするだけ</strong>です。ファイルのコピーとシェルフボタンの作成まで自動で行われ、再起動なしでそのまま使えます。</p>
+  <p>手動でインストールする場合の手順は、同梱の README.txt にまとめてあります。アンインストールはコピーされたファイルとシェルフボタンを削除するだけです。</p>
+
+  <h2 class="sec">承知しておきたいこと</h2>
+  <ul>
+    <li>程よい四角化のため、すべてを四角にできるわけではありません。特に<strong>扇形に集まった三角</strong>（元は 5 角形以上だった面など）は、三角のまま残ります。きれいなループの流れが必要な場合は、リトポを前提にお考えください。</li>
+    <li>対象は三角形の面だけです。元からある四角形・多角形の面には触れません。</li>
+    <li>「数重視」は四角の数を優先するぶん、歪んだ四角も増えます。まずは「バランス」で試し、プレビューの色分けを見ながら選ぶのがおすすめです。</li>
+  </ul>
+
+  <h2 class="sec" id="history">更新履歴</h2>
+  <table class="spec">
+    <tr><th>v1.0.3（2026-11-21）</th><td>初回公開</td></tr>
+  </table>
+
+  <p style="margin-top:26px">不具合報告・要望は <a href="/contact/">お問い合わせフォーム</a> からお願いします。</p>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fl">
+      <a href="https://x.com/miyakosodati">X（@miyakosodati）</a>
+      <a href="/contact/">お問い合わせ・バグ報告</a>
+      <a href="/eula/">EULA（使用許諾）</a>
+    </div>
+    © 都ソダチ / MYS Tools
+  </div>
+</footer>
+
+</body>
+</html>
