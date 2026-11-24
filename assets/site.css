@@ -107,3 +107,10 @@ footer.site{border-top:1px solid var(--line);padding:36px 0;color:var(--tx3);fon
 img.icon{background:none;padding:0;object-fit:contain}
 /* 解説画像(サマリー/UI機能マップ等)の共通枠 */
 .figure{width:100%;display:block;border:1px solid var(--line);border-radius:10px;margin:14px 0}
+
+/* スマホ幅: ヘッダーのメニューを折り返す / 狭い画面で枠がはみ出さないように (2026-11-24) */
+@media (max-width:560px){
+  .nav{flex-wrap:wrap;height:auto;min-height:56px;gap:4px 16px;padding-top:10px;padding-bottom:10px}
+  .nav .logo{width:100%}
+  .stella .txt{min-width:0}
+}
